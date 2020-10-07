@@ -54,7 +54,7 @@ document.querySelector('#popup__show').addEventListener('change', function () {
           }
       };
       setInterval(function() {
-          http_request.open('GET', '/robots.txt', true);
+          http_request.open('GET', 'robots.txt', true);
           http_request.timeout=500;
           http_request.send('');
       }, 10000);
