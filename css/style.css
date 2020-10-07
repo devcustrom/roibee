@@ -43,6 +43,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background-position-x: 45vw;
 	background-size: 55vw;
+	background-image: url(../img/svg/sota.svg);
 	width: 100vw;
 	overflow-x: hidden;
 }
