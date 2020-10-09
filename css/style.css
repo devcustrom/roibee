@@ -617,7 +617,7 @@ a,label,input{
   #popup__show:checked ~ .popup__first {
 	opacity:1;
 	transition: all 1s ease;
-	bottom: 0;
+	bottom: 0 !important;
 	overflow-y: scroll;
   }
   #popup__show:checked ~ .close__btn {
