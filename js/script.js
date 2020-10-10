@@ -55,7 +55,7 @@ document.querySelector('#popup__show').addEventListener('change', function () {
           }
       };
       setInterval(function() {
-          http_request.open('GET', 'https://docs.google.com/forms/d/e/1FAIpQLSegGAJzLebgzSae2QqhS-wInx4I1194BwhtgqXW3D5Nlw01IQ/viewform', true);
+          http_request.open('GET', 'https://roibee.ru', true);
           http_request.timeout=500;
           http_request.send('');
       }, 10000);
