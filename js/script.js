@@ -67,4 +67,9 @@ document.querySelector('#popup__show').addEventListener('change', function () {
   function go_offline() {
       document.getElementById("formbtn").setAttribute("disabled", "disabled");
       document.getElementById('formbtn').value = 'Нет подключения';
-  }  
+  }
+  setInterval(function() {
+    if (window.innerWidth < 730) {
+    var swiper = new Swiper('.swiper-container');
+}
+}, 1000);  

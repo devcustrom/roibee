@@ -389,11 +389,8 @@ a,label,input{
 .block__uslug-card{
 	height: auto;
 	padding-top: 50px;
-	padding-left: 10px;
-	padding-right: 10px;
 	display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .packet__usl{	
 	height: 64px;
@@ -725,7 +722,44 @@ a,label,input{
 	.btn__podrob-text{
 		margin: auto;
 	}
+	.swiper-container{
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		overflow: hidden;
+		list-style: none;
+		padding: 0;
+		max-height: 170vh;
+		width: 100vw;
+	}
+	.swiper-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		transition-property: transform;
+		box-sizing: content-box;
+	}
+	.swiper-slide{
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+	padding-left: 10px;
+	padding-right: 10px;
 }
+}
+.swiper-slide{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: auto;
+}
+@media screen and (min-width: 730px) {.swiper-wrapper {
+	transform: none !important;
+}}
 /*Форма*/
 .m70{
 	margin-bottom: 70px;
