@@ -709,8 +709,12 @@ a,label,input{
 	.text__uslug {
 		padding: 20px;
 	}
+	.text__uslug > p:first-child{
+		display:block;
+	}
 	.text__uslug > p {
 		text-align: center;
+		display:none;
 	}
 	.card__uslug > p {
 		padding-bottom: 10px;
