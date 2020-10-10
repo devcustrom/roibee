@@ -755,6 +755,47 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.swiper-button-next,.swiper-button-prev{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+	cursor: pointer;
+	z-index: 1;
+}
+.swiper-button-next:active,.swiper-button-prev:active,.swiper-button-next:focus,.swiper-button-prev:focus {
+	outline: none;
+  }
+  .swiper-button-next::-moz-focus-inner,.swiper-button-prev::-moz-focus-inner {
+	border: 0;
+  }
+.swiper-button-next{
+	right: 0;
+}
+.swiper-button-prev{
+	left: 0;
+}
+.swiper-scrollbar {
+	position: absolute;
+	top:22%;
+    left: 5%;
+    bottom: 3px;
+    z-index: 1;
+    height: 14px;
+	width: 90%;
+	opacity: 1 !important;
+	border: 1px solid #FFFFFF;
+    border-radius: 10px;
+}
+.swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(89.88deg, rgb(108, 106, 228) -36.87%, rgb(122, 18, 148) 87.66%);
+    border-radius: 10px;
+    left: -8px;
+	bottom: 30%;
+}
 }
 .swiper-slide{
 	padding-left: 10px;
@@ -902,45 +943,4 @@ background-color: #181818 !important;
 	background-repeat: no-repeat;
 	z-index:-1;
     right: 0;
-}
-.swiper-button-next,.swiper-button-prev{
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 20%;
-	cursor: pointer;
-	z-index: 1;
-}
-.swiper-button-next:active,.swiper-button-prev:active,.swiper-button-next:focus,.swiper-button-prev:focus {
-	outline: none;
-  }
-  .swiper-button-next::-moz-focus-inner,.swiper-button-prev::-moz-focus-inner {
-	border: 0;
-  }
-.swiper-button-next{
-	right: 0;
-}
-.swiper-button-prev{
-	left: 0;
-}
-.swiper-scrollbar {
-	position: absolute;
-	top:22%;
-    left: 5%;
-    bottom: 3px;
-    z-index: 1;
-    height: 14px;
-	width: 90%;
-	opacity: 1 !important;
-	border: 1px solid #FFFFFF;
-    border-radius: 10px;
-}
-.swiper-scrollbar-drag {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background: linear-gradient(89.88deg, rgb(108, 106, 228) -36.87%, rgb(122, 18, 148) 87.66%);
-    border-radius: 10px;
-    left: -8px;
-	bottom: 30%;
 }
