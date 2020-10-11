@@ -12,16 +12,26 @@ function scrollFunction() {
       document.getElementById("header").classList.remove("activeheader");
     }
   }
-document.querySelector('#popup__show').addEventListener('change', function () {
+document.querySelector('#usluga__1').addEventListener('change', function () {
     if ( this.checked ) {
       document.getElementById("body").classList.add("body__ovh");
     } else document.getElementById("body").classList.remove("body__ovh");
-  }) 
+  });
+  document.querySelector('#popup__show').addEventListener('change', function () {
+    if ( this.checked ) {
+      document.getElementById("body").classList.add("body__ovh");      
+    } else document.getElementById("body").classList.remove("body__ovh");   
+  });
+  document.querySelector('#popup__show').addEventListener('change', function () {
+    if ( this.checked ) {
+      document.getElementById("header").classList.add("activeheader");      
+    } else document.getElementById("header").classList.remove("activeheader");   
+  }); 
   document.querySelector('#menu__toggle').addEventListener('change', function () {
     if ( this.checked ) {
       document.getElementById("body").classList.add("body__ovh");
     } else document.getElementById("body").classList.remove("body__ovh");
-  })
+  });
   var http_request;
   var offline=true;
   if (window.XMLHttpRequest) {
@@ -68,3 +78,4 @@ document.querySelector('#popup__show').addEventListener('change', function () {
       document.getElementById("formbtn").setAttribute("disabled", "disabled");
       document.getElementById('formbtn').value = 'Нет подключения';
   } 
+  document.getElementById('reflink').value = document.referrer;

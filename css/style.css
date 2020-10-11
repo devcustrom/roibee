@@ -99,7 +99,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 10;
 	width: 100vw;
 }
 .inactiveheader{
@@ -392,7 +392,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	display: flex;
     flex-wrap: wrap;
 }
-.packet__usl{	
+.yarlik{	
 	height: 64px;
 	background: linear-gradient(89.88deg, #6C6AE4 -36.87%, #7A1294 87.66%);
 	border-radius: 70px 0px 0px 70px;
@@ -401,7 +401,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	width: auto;
 	position: relative;
 }
-.packet__usl::before{
+.yarlik::before{
 	content: "";
     position: absolute;
     height: 64px;
@@ -414,7 +414,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	right: 0;
 	border-right:0px;
 }
-.packet__usl > p {
+.yarlik > p {
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
@@ -545,7 +545,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 .svg__img{
 	background-repeat: no-repeat;
@@ -556,7 +556,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .onas__block{
 	width: max-content;
 	max-width: 377px;
-	padding-bottom: 14px;
+	padding-bottom: 50px;
 }
 .onas__block:last-child{
 	padding-bottom: 0;
@@ -611,35 +611,71 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	display: none;
   }
   
-  #popup__show:checked ~ .popup__first {
+  #popup__show:checked ~ .popup__brif {
 	opacity:1;
 	transition: all 1s ease;
 	bottom: 0 !important;
 	overflow-y: scroll;
+	z-index: 2;
   }
   #popup__show:checked ~ .close__btn {
 	opacity:1;
 	transition: all 1s ease;
 	left:calc(50% - 150px/2);
   }
-.popup__first{
+.popup__brif{
 	position: fixed;
 	opacity:0;
 	transition: all 1s ease;
 	background-color: #181818;
-	top: 0;
+	top: 70px;
 	left: 0;
-	bottom: 100%;
+	bottom: 0;
 	right: 0;
-	z-index: 1;
+	z-index: -1;
 }
 .close__btn{
 	opacity: 0;
 	position: fixed;
 	bottom: 5vh;
 	left:-45%;
-	z-index: 2;
+	z-index: 3;
 	transition: all 1s ease;
+}
+.popup__content{
+	display: flex;
+	flex-direction: column;
+
+}
+/*PopUp end*/
+/*PopUp*/
+#usluga__1 {
+	opacity: 0;
+	display: none;
+  }
+  
+  #usluga__1:checked ~ .popup__usluga_1 {
+	opacity:1;
+	transition: all 1s ease;
+	bottom: 0 !important;
+	overflow-y: scroll;
+	z-index: 2;
+  }
+  #usluga__1:checked ~ .close__btn {
+	opacity:1;
+	transition: all 1s ease;
+	left:calc(50% - 150px/2);
+  }
+.popup__usluga_1{
+	position: fixed;
+	opacity:0;
+	transition: all 1s ease;
+	background-color: #181818;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
 }
 /*PopUp end*/
 @media screen and (max-width: 690px) {
@@ -649,7 +685,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	.soc__icon-block > a{
 		display:none;
 	}
-	.packet__usl{
+	.yarlik{
 		margin-left: auto;
 		width: max-content;
 	}
@@ -781,7 +817,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
     left: 5%;
     bottom: 3px;
     z-index: 1;
-    height: 14px;
+    height: 10px;
 	width: 90%;
 	opacity: 1 !important;
 	border: 1px solid #FFFFFF;
@@ -802,6 +838,9 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	padding-right: 10px;
 	margin: auto;
 }
+@media screen and (min-width: 1150px) {.onas__block{
+	padding-bottom: 0px;
+}}
 @media screen and (min-width: 730px) {.swiper-wrapper {
 	transform: none !important;
 }}
@@ -860,20 +899,18 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	z-index: -1;
 	max-width: 584px;
 	margin: auto;
+	opacity:0;
+	transition: opacity 1s ease;
 }
-.form > input{
+.send1{
+	opacity:1;
+	transition: opacity 1s ease;
+}
+.form{
 	transition: opacity 1s ease;
 	opacity: 1;
 }
-.activesend > input{
-	transition: opacity 1s ease;
-	opacity: 0;
-}
-.form > textarea{
-	transition: opacity 1s ease;
-	opacity: 1;
-}
-.activesend > textarea{
+.activesend {
 	transition: opacity 1s ease;
 	opacity: 0;
 }
