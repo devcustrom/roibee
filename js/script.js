@@ -12,25 +12,35 @@ function scrollFunction() {
       document.getElementById("header").classList.remove("activeheader");
     }
   }
-document.querySelector('#usluga__1').addEventListener('change', function () {
-    if ( this.checked ) {
-      document.getElementById("body").classList.add("body__ovh");
-    } else document.getElementById("body").classList.remove("body__ovh");
-  });
-  document.querySelector('#popup__show').addEventListener('change', function () {
+  document.querySelector('#popup__brif').addEventListener('change', function () {
     if ( this.checked ) {
       document.getElementById("body").classList.add("body__ovh");      
     } else document.getElementById("body").classList.remove("body__ovh");   
   });
-  document.querySelector('#popup__show').addEventListener('change', function () {
+  document.querySelector('#popup__brif').addEventListener('change', function () {
     if ( this.checked ) {
-      document.getElementById("header").classList.add("activeheader");      
-    } else document.getElementById("header").classList.remove("activeheader");   
+      document.getElementById("header").classList.add("opacity0");      
+    } else document.getElementById("header").classList.remove("opacity0");   
+  });
+  document.querySelector('#usluga__1').addEventListener('change', function () {
+    if ( this.checked ) {
+      document.getElementById("body").classList.add("body__ovh");      
+    } else document.getElementById("body").classList.remove("body__ovh");   
+  });
+  document.querySelector('#usluga__1').addEventListener('change', function () {
+    if ( this.checked ) {
+      document.getElementById("header").classList.add("opacity0");      
+    } else document.getElementById("header").classList.remove("opacity0");   
+  });
+  document.querySelector('#usluga__1').addEventListener('change', function () {
+    if ( this.checked ) {
+      document.getElementById("slide_uslug").classList.add("lock__sw");      
+    } else setTimeout(() => {document.getElementById("slide_uslug").classList.remove("lock__sw");}, 1000);    
   }); 
   document.querySelector('#menu__toggle').addEventListener('change', function () {
     if ( this.checked ) {
-      document.getElementById("body").classList.add("body__ovh");
-    } else document.getElementById("body").classList.remove("body__ovh");
+      document.getElementById("body").classList.add("burg__ovh");
+    } else document.getElementById("body").classList.remove("burg__ovh");
   });
   var http_request;
   var offline=true;
@@ -73,9 +83,19 @@ document.querySelector('#usluga__1').addEventListener('change', function () {
   function go_online() {
       document.getElementById("formbtn").removeAttribute("disabled", "disabled");
       document.getElementById('formbtn').value = 'Отправить';
+      document.getElementById("formbtn__brif").removeAttribute("disabled", "disabled");
+      document.getElementById('formbtn__brif').value = 'Отправить';
   }
   function go_offline() {
       document.getElementById("formbtn").setAttribute("disabled", "disabled");
       document.getElementById('formbtn').value = 'Нет подключения';
+      document.getElementById("formbtn__brif").setAttribute("disabled", "disabled");
+      document.getElementById('formbtn__brif').value = 'Нет подключения';
   } 
   document.getElementById('reflink').value = document.referrer;
+  document.getElementById('reflink__brif').value = document.referrer;
+  //document.getElementById('close__btn').onclick = function () {
+    //document.getElementById('popup__show').checked = false;
+    //document.getElementById('usluga__1').checked = false;
+    //}
+    
