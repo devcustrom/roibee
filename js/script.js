@@ -75,7 +75,7 @@ function scrollFunction() {
           }
       };
       setInterval(function() {
-          http_request.open('GET', 'https://roibee.ru/?testinternet=true', true);
+          http_request.open('GET', '/offline.html', true);
           http_request.timeout=500;
           http_request.send('');
       }, 10000);
