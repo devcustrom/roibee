@@ -380,12 +380,25 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	background-image: url(../img/svg/vk.svg);
 }
 .circle__btn{
-	border-radius: 16px;
-	width: 32.54px;
-	height: 32.54px;
 	background: linear-gradient(180deg, #6C6AE4 0%, #7A1294 100%);
 	box-shadow: 0px 0px 7px rgba(84, 255, 69, 0.25);
 	margin:10px auto 0 auto;
+	position: relative;
+}
+.podrobnee__btn{
+	border-radius: 16px;
+	width: 32px;
+	height: 32px;
+}
+.circle__btn > span{
+	background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxNyAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMCkiPg0KPHBhdGggZD0iTTE2Ljk1NTUgNS4wODYxN0wxNS4wMTQzIDMuMTQ1MDJMOC43MjQzIDkuNDM1MDFMMi40MzQzMSAzLjE0NTAyTDAuNDkzMDkzIDUuMDg2MTdMOC43MjQzIDEzLjMxNzRMMTYuOTU1NSA1LjA4NjE3WiIgZmlsbD0id2hpdGUiLz4NCjwvZz4NCjxkZWZzPg0KPGNsaXBQYXRoIGlkPSJjbGlwMCI+DQo8cmVjdCB3aWR0aD0iMTYuNDYyNCIgaGVpZ2h0PSIxNi40NjI0IiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYuOTU1NSkgcm90YXRlKDkwKSIvPg0KPC9jbGlwUGF0aD4NCjwvZGVmcz4NCjwvc3ZnPg0K);
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+	transition: transform 1s ease;
+	background-size: 52%;
 }
 /*Первый слайд главной конец*/
 /*Второй слайд*/
@@ -548,7 +561,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
-	justify-content: center;
+	justify-content: space-around;
 }
 .svg__img{
 	background-repeat: no-repeat;
@@ -608,6 +621,125 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 
 /*Footer end*/
+/*Skills*/
+.mh370{
+	min-height: 370px;
+	margin-top: 10vh;
+}
+.skills__item{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: absolute;
+	justify-content: space-between;
+	width: 100%;
+	color: #FFFFFF;
+	font-style: normal;
+}
+.skills__elem{
+	position: relative;
+	min-width: 320px;
+}
+.skills__head{
+	position: relative;
+}
+.skills__head::after{
+	content: "";
+	height: 5px;
+	width: 100%;
+	border-radius: 2.5px;
+	background-image: linear-gradient(90.01deg, #4838FF 0%, #B510EF 101.32%);
+	position: absolute;
+}
+.skills__head > p {
+	font-weight: 900;
+	font-size: 25px;
+	letter-spacing: 0.035em;
+	padding-bottom: 16px;
+}
+.skills__block{
+	padding: 10px;
+	background-color: #181818;
+	border-radius: 25px;
+	box-shadow: 0 0 30px 30px #181818;
+}
+.skills__view-text > p,.skills__hide-text > li{	
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.145em;
+	padding-top: 25px;
+}
+.skills__view-text{
+	background-color: transparent;
+	overflow: hidden;
+	position: relative;
+}
+.skills__view-text::after{
+	content: "";
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+	height: 5px;
+	border-radius: 2.5px;
+	background-image: linear-gradient(90.01deg, #4838FF 0%, #B510EF 101.32%);
+	z-index: 0;
+}
+.skills__hide-text{
+	max-height: 50px;
+	transition: all 1s ease;
+}
+.skills__hide-text > li{
+	opacity: 0;
+	transition: all 1s ease;
+	background-color: transparent;
+}
+.skills__hide-text > li:first-child{
+	opacity: .40;
+}
+.skills__btn{
+	border-radius: 32px;
+	width: 50px;
+	height: 50px;
+	z-index: 1;
+}
+
+#skill__colmn-1:checked ~ .skills__hide-text{
+	max-height: 550px;
+}
+#skill__colmn-1:checked ~ .skills__hide-text > li:first-child{
+	opacity: 1;
+}
+#skill__colmn-1:checked ~ .skills__hide-text > li{
+	opacity: 1;
+}
+#skill__colmn-1:checked ~ label > .skills__btn > span{
+	transform: rotate(180deg);
+}
+#skill__colmn-2:checked ~ .skills__hide-text{
+	max-height: 550px;
+}
+#skill__colmn-2:checked ~ .skills__hide-text > li:first-child{
+	opacity: 1;
+}
+#skill__colmn-2:checked ~ .skills__hide-text > li{
+	opacity: 1;
+}
+#skill__colmn-2:checked ~ label > .skills__btn > span{
+	transform: rotate(180deg);
+}
+#skill__colmn-3:checked ~ .skills__hide-text{
+	max-height: 550px;
+}
+#skill__colmn-3:checked ~ .skills__hide-text > li:first-child{
+	opacity: 1;
+}
+#skill__colmn-3:checked ~ .skills__hide-text > li{
+	opacity: 1;
+}
+#skill__colmn-3:checked ~ label > .skills__btn > span{
+	transform: rotate(180deg);
+}
+/*Skills end*/
 /*PopUp All*/
 .inputcheck {
 	opacity: 0;
@@ -674,10 +806,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 /*PopUp Brif end*/
 /*PopUp Usluga 1*/
-#usluga__1 {
-	opacity: 0;
-	display: none;
-} 
 #usluga__1:checked ~ .popup__usluga1 {
 	opacity:1;
 	z-index: 2;
@@ -850,6 +978,12 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	bottom: 30%;
 }
 }
+@media screen and (max-width: 960px){
+	.skills__item{
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}}
 .swiper-slide{
 	padding-left: 10px;
 	padding-right: 10px;
