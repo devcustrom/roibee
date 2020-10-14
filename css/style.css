@@ -261,7 +261,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	flex-wrap: wrap;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
-	/*height: calc(var(--vh, 1vh) * 100);*/
 	height: 100vh;
 
 }
@@ -269,6 +268,11 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	max-height: 80vh;
 	margin:auto auto auto 0;
 	padding-top: 70px;
+	height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px 0px;
 }
 .first__block-text{
 	min-height:80%;
@@ -277,7 +281,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	width: 100%;
 }
 .text__landing{
-	margin-top: auto;
+	
 }
 .text__landing-big{
 	font-style: normal;
@@ -325,7 +329,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	align-self: center;
 	flex-grow: 0;
 	width:max-content;
-	cursor: pointer;	
+	cursor: pointer;
+	transition: all 1s ease;	
 }
 .btn:hover{
 	box-shadow: 0px 0px 6px #6B68E0;
@@ -335,9 +340,24 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	opacity: .60;
 }
 .first__slide-btn{
-	margin: 10vh auto auto 0;
+	margin: 0 auto 0 0;
+	position: relative;
 }
-
+.first__slide-btn:hover{
+	margin: 0 auto 0 0;
+	outline: 1px black;
+}
+.first__slide-btn:hover + .first__slide-btn::after{
+	content: "";
+	position: absolute;
+	top: -5px;
+	bottom: -5px;
+	left:-5px;
+	right: -5px;
+	background-image: linear-gradient(180deg, #6B68E0 0%, #781493 100%);
+	z-index: -1;
+	border-radius: 60px;
+}
 .soc__icon-block > a{
 	margin-left: 10px;
 	width: 27px;
@@ -398,7 +418,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
     background-repeat: no-repeat;
     background-position: center;
 	transition: transform 1s ease;
-	background-size: 52%;
+	background-size: 50%;
 }
 /*Первый слайд главной конец*/
 /*Второй слайд*/
