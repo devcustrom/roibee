@@ -57,7 +57,9 @@ body{
 	overflow: hidden;
 	background-position-x: 100%;
 }
-
+.pt-1{
+	padding-top: 1vh;
+}
 .wrapper{
 	max-width: 1260px;
 	margin: 0 auto;
@@ -76,6 +78,7 @@ body{
 .h100{
 	height: 100%;
 }
+p
 .ml_auto{
 	margin-left: auto;
 }
@@ -466,7 +469,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	min-height: 365px;
 	height:auto;
 	background: linear-gradient(180deg, rgba(108, 106, 228,   0.98) 0%, rgba(122, 18, 148, 0.98) 100%);
-	border-radius: 50px;
+	border-radius: 20px;
 	padding:0 4.2vw;
 }
 .card__uslug:last-child{
@@ -555,10 +558,67 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .btn_dark:hover{
 	box-shadow: 0px 0px 13px #000000;
 }
+.btn_white{
+	padding: 16px 32px;
+	width: max-content;
+	height: max-content;
+	background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%);
+	border-radius: 50px;
+}
+.btn_white:active{
+	box-shadow: 0px 0px 13px #000000;
+	opacity: .60;
+}
+.btn_white:hover{
+	box-shadow: 0px 0px 13px #000000;
+}
 .btn__podrob-text{
 	margin: auto auto 0 0;
+	color: #000;
 }
 /*Конец второго слайда*/
+/*Блок в чем наши преимущества*/
+.block__advantages{
+
+}
+.text__i{
+	font-style: normal;
+font-weight: bold;
+font-size: 28px;
+line-height: 140%;
+/* identical to box height, or 43px */
+
+letter-spacing: 0.145em;
+margin-bottom: 100px;
+margin-top: 100px;
+text-align: center;
+color: #FFFFFF;
+}
+.icon__block{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.advantages__item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: blanchedalmond;
+	width: min-content;
+	padding: 10px;
+}
+.advan__icon-item{
+	width: 124px;
+	height: 124px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.advan__text-item{
+	padding-top: 10px;
+}
+/*конец блока преимуществ*/
 /*Третий слайд*/
 .block__onas{
 	height: auto;
@@ -678,10 +738,11 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	padding-bottom: 16px;
 }
 .skills__block{
-	padding: 10px;
+	padding: 20px;
 	background-color: #181818;
-	border-radius: 25px;
+	border-radius: 20px;
 	box-shadow: 0 0 30px 30px #181818;
+	/*box-shadow: 0px 0px 15px 21px rgb(181 16 239 / 48%);*/
 }
 .skills__view-text > p,.skills__hide-text > li{	
 	font-weight: 500;
@@ -706,11 +767,12 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .skills__hide-text{
 	max-height: 50px;
-	transition: all 1s ease;
+	transition: max-height 1s ease;
+	
 }
 .skills__hide-text > li{
 	opacity: 0;
-	transition: all 1s ease;
+	transition: opacity 1s ease;
 	background-color: transparent;
 }
 .skills__hide-text > li:first-child{
@@ -769,18 +831,19 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	position: fixed;
 	width: 100vw;
 	opacity:0;
-	transition: all 1s ease 0.3s;
+	transition: opacity 1s linear 1s, left 1s linear 2s;
 	background-color: #181818;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: -1;
+	left:-100%;
 	overflow-y: scroll;
+	z-index: 2;
 }
 .popup__all > div{
 	opacity:0;
-	transition: all 1s ease 1s;
+	transition: opacity 0.5s linear 0.5s;
 }
 .popup__all::-webkit-scrollbar{width: 0;}
 .popup__all {-ms-overflow-style: none;overflow: -moz-scrollbars-none;}
@@ -810,31 +873,17 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 
 }
 /*PopUp All end*/
-/* PopUp Brif */
-#popup__brif:checked ~ .popup__brif {
+/*PopUp Show*/
+#usluga__1:checked ~ .popup__usluga1,#popup__brif:checked ~ .popup__brif {
 	opacity:1;
-	z-index: 2;
+	left:0;
+	transition:opacity 1s linear 1s, left 1s linear;
 }
-#popup__brif:checked ~ .popup__brif > div{
+#popup__brif:checked ~ .popup__brif > div,#usluga__1:checked ~ .popup__usluga1 > div{
 	opacity:1;
-	z-index: 2;
+	left:0;
 }
-#popup__brif:checked ~ .close__btn {
-	opacity:1;
-	right: 0;
-	top: 0;
-}
-/*PopUp Brif end*/
-/*PopUp Usluga 1*/
-#usluga__1:checked ~ .popup__usluga1 {
-	opacity:1;
-	z-index: 2;
-}
-#usluga__1:checked ~ .popup__usluga1 > div{
-	opacity:1;
-	z-index: 2;
-}
-#usluga__1:checked ~ .close__btn {
+#usluga__1:checked ~ .close__btn,#popup__brif:checked ~ .close__btn {
 	opacity:1;
 	right: 0;
 	top: 0;
@@ -1153,3 +1202,29 @@ background-color: #181818 !important;
 	z-index:-1;
     right: 0;
 }
+/*li::before {
+	counter-reset: num 3;
+	list-style-type: none;
+	counter-increment: num;
+    content: counter(num) '. '; 
+   }*/
+/*Сдержимое popupa*/
+.name__uslug{
+	text-align: center;
+}
+.text__popup-uslug{
+	text-align: center;
+}
+.block__uslug-popup{
+	display: flex;
+
+}
+.img__popup-uslug{
+	height: 20vh;
+	width: 40%;
+	background-image: url(../img/rocket.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+/*Конец*/
