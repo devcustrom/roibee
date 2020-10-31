@@ -253,7 +253,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .first__block-text{
 	min-height:80%;
 	display: flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 }
 .text__landing{
 	
