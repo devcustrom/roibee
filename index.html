@@ -11,6 +11,8 @@
         Летит РойПчел
     </title>
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐝</text></svg>" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="//fonts.gstatic.com">
     <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -57,26 +59,26 @@
         <section id="slide_1" class="intro slide__one">
             <div class="wrapper">
                 <div class="first__slide pos_relative">
-                    <div class="first__block-text">
+                    <div class="first__block-text w100">
                         <div class="textblock__landing">
                             <div class="text__landing">
                                 <p class="text__landing-big adaptive__font30">СТУДИЯ ВЕБ-ДИЗАЙНА</p>
                                 <p class="text__landing-lit adaptive__font25">Минимализм и удобство!</p>
                             </div>
                         
-                        <label for="popup__brif" class="btn tdn first__slide-btn bggrad adaptive__font16">Заполнить бриф</label>
+                        <label for="popup__brif" class="btn color-white first__slide-btn bggrad adaptive__font16">Заполнить бриф</label>
                         <input id="popup__brif" class="inputcheck" type="checkbox" />
                         <label class="close__btn bggrad" for="popup__brif"><span></span></label> 
                         <div class="popup__all popup__brif">
                             <div class="wrapper">
                                 <div class="popup__content pos_relative">
-                                    <form name="contact_form" id="form__brif" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegGAJzLebgzSae2QqhS-wInx4I1194BwhtgqXW3D5Nlw01IQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                                        <input placeholder="Ваша почта" class="form__area" name="entry.392006969" type="email" required />
-                                        <input placeholder="Ваш номер телефона" class="form__area"  name="entry.2041655379" type="tel" required/>
-                                        <textarea placeholder="Сообщение......." class="form__area" name="entry.34869297" type="text" style="min-height: 270px;" required></textarea>
-                                        <input type="hidden" name="entry.770060874" value="http://127.0.0.1:5500/">
-                                        <input id="reflink__brif" type="hidden" name="entry.245110546" value="">
-                                        <input id="formbtn__brif" class="btn form__btn" type="submit" value="Отправить"/>
+                                    <form name="contact_form" id="form__brif" class="form" action="" method="post" target="hidden_iframe" onsubmit="submitted=true">
+                                        <input placeholder="Ваша почта" class="form__area w100" name="" type="email" required />
+                                        <input placeholder="Ваш номер телефона" class="form__area w100"  name="" type="tel" required/>
+                                        <textarea placeholder="Сообщение......." class="form__area w100" name="" type="text" style="min-height: 270px;" required></textarea>
+                                        <input type="hidden" name="" value="">
+                                        <input class="refclass" type="hidden" name="" value="">
+                                        <input class="btn form__btn btnclass" type="submit" value="Отправить"/>
                                   </form>
                                 </div>
                             </div>
@@ -86,7 +88,7 @@
                         </div>
                     </div>
                     
-                    <div class="soc__icon-block">                     
+                    <div class="soc__icon-block w100">                     
                         <a href="#!" rel="nofollow" class="vk__icon">Мы ВКонтакте</a>
                         <a href="#!" rel="nofollow" class="inst__icon">Наш инстаграмм</a>
                         <a href="#!" rel="nofollow" class="twitter__icon">Наш твиттер</a>
@@ -108,7 +110,7 @@
                 <p>Мы делаем</p>        
             </div>
             <div class="wrapper mh370 pos_relative">
-                <div class="skills__item">
+                <div class="skills__item w100">
                     <div class="skills__elem">
                         <div class="skills__block">
                             <div class="skills__head">
@@ -118,7 +120,7 @@
                                 <p>Лендинг страницы</p>
                                 <p>Сайт любой тематики</p>
                                 <p>Интернет-магазин</p>
-                                <input id="skill__colmn-1" class="inputcheck" type="checkbox" />
+                                <input id="skill__colmn-1" class="hidden" type="checkbox" />
                                 <ul class="skills__hide-text">
                                     <li>Лендинг страницы</li>
                                     <li>Интернет-магазин</li>
@@ -146,7 +148,7 @@
                                 <p>Лендинг страницы</p>
                                 <p>Сайт любой тематики</p>
                                 <p>Интернет-магазин</p>
-                                <input id="skill__colmn-2" class="inputcheck" type="checkbox" />
+                                <input id="skill__colmn-2" class="hidden" type="checkbox" />
                                 <ul class="skills__hide-text">
                                     <li>Лендинг страницы</li>
                                     <li>Интернет-магазин</li>
@@ -175,7 +177,7 @@
                                 <p>Лендинг страницы</p>
                                 <p>Сайт любой тематики</p>
                                 <p>Интернет-магазин</p>
-                                <input id="skill__colmn-3" class="inputcheck" type="checkbox" />
+                                <input id="skill__colmn-3" class="hidden" type="checkbox" />
                                 <ul class="skills__hide-text">
                                     <li>Лендинг страницы</li>
                                     <li>Интернет-магазин</li>
@@ -257,8 +259,8 @@
         <div class="pryamougolbg2 b-lazy" data-src="img/svg/botr.svg"></div>
         <section>
             <div class="wrapper block__onas">
-                <!--<div class="onas__logo b-lazy" data-src="img/svg/logo.svg"></div>-->
-                <div class="onas__info">
+                <!--<div class="onas__logo b-lazy w100" data-src="img/svg/logo.svg"></div>-->
+                <div class="onas__info w100">
                     <div class="onas__block">
                         <div class="svg__img">
                             <svg width="89" height="89" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -305,32 +307,32 @@
                 <p>Пакеты услуг</p>        
             </div>
             <div class="swiper-scrollbar">
-                <div class="swiper-scrollbar-drag"></div>
+                <div class="swiper-scrollbar-drag w100"></div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="wrapper block__uslug-card swiper-wrapper">
-                <div class="swiper-slide">
+            <div class="wrapper block__uslug-card swiper-wrapper w100">
+                <div class="swiper-slide w100">
                     <div class="card__uslug">
                         <p class="text">
                             Дизайн сайтов
                         </p>
                         <div class="card__uslug-flex">
-                            <div class="block__img-price">
-                                <div class="img__uslug b-lazy" data-src="img/webdev.png"></div>
+                            <div class="block__img-price w100">
+                                <div class="img__uslug b-lazy swiper-lazy" data-src="img/webdev.png" data-background="http://placehold.it/320x300"></div>
                                 <div class="uslug__price"><p>от 20.000 ₽</p></div>
                             </div>
-                            <div class="text__uslug">
+                            <div class="text__uslug w100">
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
-                                <label class="btn_white tdn btn__podrob-text" for="usluga__1">Подробнее</label>
+                                <label class="btn_white color-white btn__podrob-text" for="usluga__1">Подробнее</label>
                                 <input id="usluga__1" class="inputcheck" type="checkbox" />
                                 <label class="close__btn bggrad" for="usluga__1"><span></span></label>   
                                 <div class="popup__all popup__usluga1">
                                     
-                                        <div class="pos_relative">
+                                        <div class="pos_relative b-lazy bg-plb bg-rnr footer__popup-bg" data-src="img/svg/footbg.svg">
                                              <section class="wrapper__popup">
                                                  <div class="name__uslug adaptive__font30">
                                                     <p>Дизайн сайтов</p>
@@ -355,17 +357,17 @@
                                                          <li>✔️
                                                              Создание логотипов, если потребуется</li>
                                                      </ul>
-                                                     <label class="btn_white tdn btn__podrob-text mt-5w" for="usluga__1">Заказать дизайн</label>
+                                                     <label class="btn_white color-white color-black m_auto mt-5w" for="usluga__1">Заказать дизайн</label>
                                                     </div>
                                                  </div>
                                                 
                                              </section>
                                              <section>
-                                                <div class="yarlik m70 pr-30w">
+                                                <div class="yarlik mb-70px pr-30w">
                                                     <p>Процесс</p>        
                                                 </div>
                                                 <div class="wrapper__popup pb-8w">
-                                                    <ul class="test__popup">
+                                                    <ul class="column__popup">
                                                         <li>ОБСУЖДЕНИЕ
                                                             <p>Что ожидает клиент от сайта, какие у него представления о сайте, что он хочет
                                                                 донести до клиента, какая тематика.</p>
@@ -382,37 +384,39 @@
                                                     </ul>
                                                 </div>
                                              </section>
+                                             <div class="footer">
+                                                <p>© RoiBee 2020<br><a href="#!">Политика конфиденциальности</a> | <a href="#!">Все права защищены</a></p>
+                                             </div>
                                         </div>
                                     
                                 </div>
                             </div>
-                            </div>                    
+                        </div>                    
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div class="yarlik m70">
+        <section class="pb-1w">
+            <div class="yarlik mb-70px">
                 <p>Связаться с нами
                 </p>        
             </div>
             <div class="wrapper pos_relative pt-1">
                 <script>var submitted=false;</script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
-                    {document.getElementById('form').classList.add('activesend');
+                    {document.getElementById('form').style.opacity = '0';
                     document.getElementById('send__form').classList.add('send1');
                     setTimeout(() => {document.getElementById('form').reset();
-                    document.getElementById('form').classList.remove('activesend');
+                    document.getElementById('form').style.opacity = '';
                     document.getElementById('send__form').classList.remove('send1');
                     }, 6000)}"></iframe>
-                <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegGAJzLebgzSae2QqhS-wInx4I1194BwhtgqXW3D5Nlw01IQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                    <input placeholder="Ваша почта" class="form__area" name="entry.392006969" type="email" required />
-                    <input placeholder="Ваш номер телефона" class="form__area"  name="entry.2041655379" type="tel" required/>
-                    <textarea placeholder="Сообщение......." class="form__area" name="entry.34869297" type="text" style="min-height: 270px;" required></textarea>
-                    <input type="hidden" name="entry.770060874" value="http://127.0.0.1:5500/">
-                    <input id="reflink" type="hidden" name="entry.245110546" value="">
-                    <input id="formbtn" class="btn form__btn" type="submit" value="Отправить"/>
-                    
+                <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSceHo28VjZ8QgsyWgFr1T7_TwqbDlinnUHiFliU_d7faXIoAQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
+                    <input placeholder="Ваша почта" class="form__area w100" name="entry.183100258" type="email" required />
+                    <input placeholder="Ваш номер телефона" class="form__area w100"  name="entry.2081991681" type="tel" required/>
+                    <textarea placeholder="Сообщение......." class="form__area w100" name="entry.714657000" type="text" style="min-height: 270px;" required></textarea>
+                    <input type="hidden" name="entry.698711001" value="http://127.0.0.1:5500/">
+                    <input class="refclass" type="hidden" name="entry.27823824" value="">
+                    <input class="btn form__btn btnclass" type="submit" value="Отправить"/>
               </form>
               <div id="send__form" class="send__form">
                 <p>Спасибо за ваше доверие! В ближайшее время с вами свяжутся.</p>
@@ -420,7 +424,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer b-lazy" data-src="img/svg/footbg.svg" id="footer">
+    <footer class="footer" id="footer">
         <p>© RoiBee 2020<br><a href="#!">Политика конфиденциальности</a> | <a href="#!">Все права защищены</a></p>
     </footer>
     <script defer src="/js/script.js"></script>
