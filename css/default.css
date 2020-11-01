@@ -33,10 +33,12 @@
 .adaptive__font25{
 	font-size: calc(18px + 7 * ((100vw - 320px) / (1920 - 320)));
 }
-.adaptive__font20,.column__popup > li > p{
+.adaptive__font20,
+.column__popup > li > p{
 	font-size: calc(14px + 6 * ((100vw - 320px) / (1920 - 320)));
 }
-.adaptive__font18{
+.adaptive__font18,
+.yarlik{
 	font-size: calc(14px + 4 * ((100vw - 320px) / (1920 - 320)));
 }
 .adaptive__font16{
