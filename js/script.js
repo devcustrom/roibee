@@ -74,7 +74,7 @@ for (var i = 0; i < reflink.length; i++) {
 for (var i = 0; i < inpcheck.length; i++) {
   inpcheck[i].addEventListener('change', function () {
     if ( this.checked ) {gethdr.classList.add("opacity0");getbody.classList.add("body__ovh");swiperblck.classList.add("lock__sw");} 
-    else {gethdr.classList.remove("opacity0");getbody.classList.remove("body__ovh");setTimeout(() => {swiperblck.classList.remove("lock__sw");}, 1000);}   
+    else {gethdr.classList.remove("opacity0");getbody.classList.remove("body__ovh");setTimeout(() => {swiperblck.classList.remove("lock__sw");}, 1500);}   
   });
 }
 };
