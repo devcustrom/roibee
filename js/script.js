@@ -76,5 +76,8 @@ for (var i = 0; i < inpcheck.length; i++) {
     if ( this.checked ) {gethdr.classList.add("opacity0");getbody.classList.add("body__ovh");swiperblck.classList.add("lock__sw");} 
     else {gethdr.classList.remove("opacity0");getbody.classList.remove("body__ovh");setTimeout(() => {swiperblck.classList.remove("lock__sw");}, 1500);}   
   });
+  document.querySelector('#menu__toggle').addEventListener('change', function () {
+    if ( this.checked ) {getbody.classList.add("burg__ovh");} else {getbody.classList.remove("burg__ovh");}
+  });
 }
 };

@@ -6,13 +6,7 @@
 		display:none;
 	}
 	.yarlik{
-		width: max-content;
-	}
-	.yarlik_r{
-		margin-left: auto;
-	}
-	.yarlik_l{
-		margin-right: auto;
+		max-width:80%;
 	}
 	  .menu__box {
 		display: block;
@@ -112,8 +106,6 @@
 	    height: auto;
 	    position: relative;
 	    transition-property: transform;
-	    padding-left: 10px;
-	    padding-right: 10px;
     }
     .swiper-button-next,.swiper-button-prev{
 	    position: absolute;
