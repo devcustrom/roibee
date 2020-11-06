@@ -612,6 +612,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	justify-content: space-between;
 	color: #FFFFFF;
 	font-style: normal;
+	left:calc(15px + 25 var(--adaptive));
+	right:calc(15px + 25 var(--adaptive));
 }
 .skills__elem{
 	position: relative;
