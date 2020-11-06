@@ -241,7 +241,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	color: #FFFFFF;
 }
 .monitor__block{
-	margin: auto 0 auto auto;
+	margin: auto;
 	background:right no-repeat;
 	background-size:contain;
 	padding-right: 42%;
@@ -298,20 +298,38 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	border-radius: 60px;
 }
 .soc__icon-block > a{
-	margin-left: 10px;
-	width: 27px;
-	height: 27px;
-	float: right;
+	min-width: 45px;
+	min-height: 45px;
 	font-size: 0;
+	background-size: contain;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+.soc__icon-block > *{
+	margin-bottom: 26px;
+}
+.soc__icon-block > *:last-child{
+	margin-bottom: 0;
+}
+.soc__icon-block > span:first-child{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0 ;
+}
+.soc__icon-block > span{
+	height: 100%;
+    max-height: 35%;
+    width: 9px;
+    background: #FFFFFF;
+    border-radius: 5px;
 }
 .soc__icon-block > a:hover{
 	opacity: .75;
 }
 .soc__icon-block {
-	height: max-content;
-	padding-top: 0%;
-	padding-bottom: 20%;
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
 .podrobnee > p{
 	font-style: normal;
@@ -323,13 +341,11 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	text-align: center;
 }
 .podrobnee{
-	width: max-content;
     margin-left: auto;
     margin-right: auto;
 }
 .twitter__icon{
 	background-image: url(../img/svg/twitter.svg);
-	width: 32px !important;
 }
 .inst__icon{
 	background-image: url(../img/svg/inst.svg);
@@ -339,7 +355,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .circle__btn{
 	background: linear-gradient(180deg, var(--fiol2) 0%, var(--purp2) 100%);
-	box-shadow: 0px 0px 7px rgba(84, 255, 69, 0.25);
 	margin:10px auto 0 auto;
 	position: relative;
 }

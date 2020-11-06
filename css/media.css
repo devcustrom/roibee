@@ -2,7 +2,7 @@
 	.hide__btn{
 		display:flex;
 	} 
-	.soc__icon-block > a{
+	.soc__icon-block{
 		display:none;
 	}
 	.yarlik{
@@ -36,19 +36,14 @@
 	}
 }
 @media screen and (max-height: 481px) and (orientation: landscape){
-	.soc__icon-block{
+	.podrobnee{
 		display: none;
 	}
 }
 @media screen and (min-width: 680px) and (orientation: landscape){
-	.soc__icon-block{
-		padding-top: 5%;
-	}
+	
 }
 @media screen and (max-width: 844px){
-	.monitor__block{
-		display: none;
-	}
 	body{
 		background-size: 70%;
 		background-position-x: 100%;
@@ -152,7 +147,10 @@
 	.skills__item{
 		position: initial;
 		justify-content: center;
-    }
+	}
+	.monitor__block{
+		display: none;
+	}
 }   
 @media screen and (min-width: 1150px) {
     .onas__block{
