@@ -24,9 +24,7 @@ body{
 	padding-top: 1vh;
 }
 
-.bggrad {
-	background-image: linear-gradient(180deg, var(--fiol) 0%, var(--purp) 100%);
-}
+
 .color-white{
 	color:white;
 }
@@ -253,29 +251,72 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 16px 32px;
-	box-shadow: 0px 0px 4px var(--purp);
-	border-radius: 60px;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 143.4%;
-	letter-spacing: 0.145em;
-	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
-	flex: none;
-	order: 0;
+	padding: 16px 32px;	
+	border-radius: 50px;
 	align-self: center;
-	flex-grow: 0;
 	width:max-content;
 	cursor: pointer;
-	transition: all 1s ease;	
-}
-.btn:hover{
-	box-shadow: 0px 0px 6px var(--fiol);
+	transition: box-shadow 1s ease,opacity 1s ease;
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 0.145em;
 }
 .btn:active{
-	box-shadow: 0px 0px 13px var(--fiol);
 	opacity: .60;
+}
+.btn:disabled {
+	opacity: .4 !important;
+}
+.btn_fiol{
+	background-image: linear-gradient(180deg, var(--fiol) 0%, var(--purp) 100%);
+	box-shadow: 0px 0px 4px var(--purp);
+	color: white;
+}
+.btn_fiol:hover,.btn_fiol:focus{
+	box-shadow: 0px 0px 6px var(--fiol);
+}
+.btn_fiol:active{
+	box-shadow: 0px 0px 13px var(--fiol);
+}
+.btn_dark{
+	background: linear-gradient(180deg, #424242 0%, #171817 100%);
+	border-radius: 50px;
+}
+.btn_dark:active{
+	box-shadow: 0px 0px 13px #000000;
+	opacity: .60;
+}
+.btn_dark:hover,.btn_dark:focus{
+	box-shadow: 0px 0px 13px #000000;
+}
+.btn_white{
+	background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%);
+	color: #000000;
+}
+.btn_white:active{
+	box-shadow: 0px 0px 13px #000000;
+	opacity: .60;
+}
+.btn_white:hover,.btn_white:focus{
+	box-shadow: 0px 0px 13px #000000;
+}
+.btn__podrob-text{
+	margin: auto auto 0 0;
+}
+
+.btn_back{
+	color:#ffffff;
+	
+}
+.btn_back::after{
+	content: "";
+	border: 2px solid #FFFFFF;
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	border-radius:inherit;
 }
 .first__slide-btn{
 	margin: 0 auto 0 0;
@@ -461,37 +502,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	padding-bottom: 16px;
 	width: 100%;
 }
-.btn_dark{
-	padding: 16px 32px;
-	width: max-content;
-	height: max-content;
-	background: linear-gradient(180deg, #424242 0%, #171817 100%);
-	border-radius: 50px;
-}
-.btn_dark:active{
-	box-shadow: 0px 0px 13px #000000;
-	opacity: .60;
-}
-.btn_dark:hover{
-	box-shadow: 0px 0px 13px #000000;
-}
-.btn_white{
-	width: max-content;
-	height: max-content;
-	background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%);
-	border-radius: 50px;
-}
-.btn_white:active{
-	box-shadow: 0px 0px 13px #000000;
-	opacity: .60;
-}
-.btn_white:hover{
-	box-shadow: 0px 0px 13px #000000;
-}
-.btn__podrob-text{
-	margin: auto auto 0 0;
-	color: #000;
-}
+
 /*Конец второго слайда*/
 /*Ярлыки*/
 .yarlik{	
@@ -816,40 +827,75 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	opacity:1;
 	transition: opacity 1s ease;
 }
-.btn:disabled {
-	opacity: 0.5 !important;
-}
+
 /*Форма конец*/
 /**/
-.process__modal{
-
+.process__progress{
+	position: absolute;
+	height: 14px;
+	width: 100%;
+	border: 1px solid #FFFFFF;
+	border-radius: 7px;
+	position: relative;
+	margin-bottom: 10px;
+}
+.process__progress > div{
+	position: absolute;
+	height: 100%;
+	top: 4px;
+	left: 4px;
+	border-radius: inherit;
+	background-image: linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%);
+	transition: width 0.3s ease 0.2s;
+}
+#p1:checked ~ .process__progress > div{
+	width: 20%;
+}
+#p2:checked ~ .process__progress > div{
+	width: 40%;
+}
+#p3:checked ~ .process__progress > div{
+	width: 60%;
+}
+#p4:checked ~ .process__progress > div{
+	width: 80%;
+}
+#p5:checked ~ .process__progress > div{
+	width: 100%;
 }
 .process__punkts{
 	flex-grow: 1;
-	width: 20%;
-	justify-content: space-around;
+	min-width: 450px;
+	margin-right: 18px !important;
+	justify-content: space-between;
 	counter-reset: num;
-	list-style-type: none;
+	
 }
 
 .process__punkts > li{
-	width:80%;
+	min-width:420px;
 	background: linear-gradient(95.96deg, #DC56FF 1.71%, #704BFF 100%);
 	border-radius: 50px;
 	margin-bottom: 10px;
+	margin-right: 30px;
     display: flex;
     justify-content: center;
 	align-items: center;
 	padding: 15px;
 	transition: margin ease 0.5s,opacity ease 0.5s;
 	opacity: .6;
+
+}
+.process__punkts > li:last-child{
+	margin-bottom: 0;
 }
 #p1:checked ~ .process__punkts > li:nth-child(1),
 #p2:checked ~ .process__punkts > li:nth-child(2),
 #p3:checked ~ .process__punkts > li:nth-child(3),
 #p4:checked ~ .process__punkts > li:nth-child(4),
 #p5:checked ~ .process__punkts > li:nth-child(5){
-	margin-left: 15%;
+	margin-left: 30px;
+	margin-right: 0;
 	opacity: 1;
 }
 .process__punkts > li::before {
@@ -859,13 +905,14 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .process__card{
 	flex-grow: 1;
 	width: 80%;
-	height: 405.07px;
+	min-height: 405px;
 	border-radius: 25px;
 	background: #2F2F2F;
-	padding: 50px;
+	padding:calc(15px + 25 var(--adaptive)) calc(15px + 58 var(--adaptive));
+	max-width: 986px;
 }
 
-.process__card > div{
+.process__modal{
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -873,23 +920,22 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	visibility: hidden;
 	height: 0;
 	opacity:0;
-	transition:opacity 0.5s ease, visibility 0.5s ease 0.5s,height 0s ease 0.5s;
+	transition:opacity 0.5s ease, height 0s ease 0.5s,visibility 0s ease 0.5s;
 }
-#p1:checked ~ .process__card > div:nth-child(1),
-#p2:checked ~ .process__card > div:nth-child(2),
-#p3:checked ~ .process__card > div:nth-child(3),
-#p4:checked ~ .process__card > div:nth-child(4),
-#p5:checked ~ .process__card > div:nth-child(5){
+.process__modal > p{
+	padding: 6% 0;
+}
+#p1:checked ~ .process__card > .process__modal:nth-child(1),
+#p2:checked ~ .process__card > .process__modal:nth-child(2),
+#p3:checked ~ .process__card > .process__modal:nth-child(3),
+#p4:checked ~ .process__card > .process__modal:nth-child(4),
+#p5:checked ~ .process__card > .process__modal:nth-child(5){
 	visibility: visible;
 	opacity: 1;
 	height: 100%;
-	transition:opacity 0.5s ease 0.5s, visibility 0.5s ease,height 0s ease 0.5s;
+	transition:opacity 0.5s ease 0.5s,height 0s ease 0.5s,visibility 0s ease 0.5s;
 }
-.btn_back{
-	color:#ffffff;
-	border: 2px solid #FFFFFF;
-	border-radius: 50px;
-}
+
 /**/
 .sotabg{
 	position: absolute;

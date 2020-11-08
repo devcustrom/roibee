@@ -24,7 +24,10 @@
 body{
 	background:right top no-repeat var(--dark);
 	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
 	font-size: 15px;
+	letter-spacing: 0.145em;
 	background-position-x: 45vw;
 	color: white;
 	background-size: 55vw;
@@ -49,17 +52,32 @@ body{
 .adaptive__font25{
 	font-size: calc(18px + 7 var(--adaptive));
 }
+.adaptive__font22,
+.process__modal > span{
+	font-size: calc(16px + 6 var(--adaptive));
+}
 .adaptive__font20,
 .column__popup > li > p{
 	font-size: calc(14px + 6 var(--adaptive));
 }
 .adaptive__font18,
 .yarlik,
-.advan__text-item{
+.advan__text-item,
+.process__modal > p,
+.process__punkts > li{
 	font-size: calc(14px + 4 var(--adaptive));
 }
-.adaptive__font16{
+.adaptive__font16,.btn{
 	font-size: calc(12px + 4 var(--adaptive));
+}
+.font-normal,
+.process__modal > p{
+	font-weight: normal;
+}
+.font-bold,
+.process__modal > span,
+{
+	font-weight: bold;
 }
 .m_auto{
     margin: auto;
@@ -102,6 +120,9 @@ body{
 }
 .just-end{
 	justify-content: flex-end;
+}
+.just-center{
+	justify-content: center;
 }
 .d-none{
 	display:none;

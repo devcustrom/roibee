@@ -148,8 +148,14 @@
 		position: initial;
 		justify-content: center;
 	}
-	.monitor__block{
+	.monitor__block,.process__punkts{
 		display: none;
+	}
+	.process__block{
+		flex-wrap: wrap;
+	}
+	.process__progress{
+		display: block;
 	}
 }   
 @media screen and (min-width: 1150px) {
