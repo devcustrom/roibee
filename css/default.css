@@ -94,9 +94,21 @@ body{
 .no-wrap{
 	flex-wrap: nowrap;
 }
+.wrap{
+	flex-wrap: wrap;
+}
 .align-center{
 	align-items: center;
 }
 .just-end{
 	justify-content: flex-end;
+}
+.d-none{
+	display:none;
+}
+.direction-col{
+	flex-direction: column;
+}
+.color-black{
+	color: black;
 }

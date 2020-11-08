@@ -251,8 +251,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .btn{
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
+	align-items: center;
+	justify-content: center;
 	padding: 16px 32px;
 	box-shadow: 0px 0px 4px var(--purp);
 	border-radius: 60px;
@@ -261,7 +261,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	font-size: 16px;
 	line-height: 143.4%;
 	letter-spacing: 0.145em;
-	color: #FFFFFF;
 	text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
 	flex: none;
 	order: 0;
@@ -298,8 +297,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	border-radius: 60px;
 }
 .soc__icon-block > a{
-	min-width: 45px;
-	min-height: 45px;
+	min-width: 40px;
+	min-height: 40px;
 	font-size: 0;
 	background-size: contain;
     background-position: center;
@@ -318,7 +317,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .soc__icon-block > span{
 	height: 100%;
     max-height: 35%;
-    width: 9px;
+    width: 6px;
     background: #FFFFFF;
     border-radius: 5px;
 }
@@ -477,7 +476,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	box-shadow: 0px 0px 13px #000000;
 }
 .btn_white{
-	padding: 16px 32px;
 	width: max-content;
 	height: max-content;
 	background: linear-gradient(180deg, #FFFFFF 0%, #CCCCCC 100%);
@@ -822,6 +820,77 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	opacity: 0.5 !important;
 }
 /*Форма конец*/
+/**/
+.process__modal{
+
+}
+.process__punkts{
+	flex-grow: 1;
+	width: 20%;
+	justify-content: space-around;
+	counter-reset: num;
+	list-style-type: none;
+}
+
+.process__punkts > li{
+	width:80%;
+	background: linear-gradient(95.96deg, #DC56FF 1.71%, #704BFF 100%);
+	border-radius: 50px;
+	margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+	padding: 15px;
+	transition: margin ease 0.5s,opacity ease 0.5s;
+	opacity: .6;
+}
+#p1:checked ~ .process__punkts > li:nth-child(1),
+#p2:checked ~ .process__punkts > li:nth-child(2),
+#p3:checked ~ .process__punkts > li:nth-child(3),
+#p4:checked ~ .process__punkts > li:nth-child(4),
+#p5:checked ~ .process__punkts > li:nth-child(5){
+	margin-left: 15%;
+	opacity: 1;
+}
+.process__punkts > li::before {
+	counter-increment: num;
+    content: counter(num) '. '; 
+}
+.process__card{
+	flex-grow: 1;
+	width: 80%;
+	height: 405.07px;
+	border-radius: 25px;
+	background: #2F2F2F;
+	padding: 50px;
+}
+
+.process__card > div{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+	visibility: hidden;
+	height: 0;
+	opacity:0;
+	transition:opacity 0.5s ease, visibility 0.5s ease 0.5s,height 0s ease 0.5s;
+}
+#p1:checked ~ .process__card > div:nth-child(1),
+#p2:checked ~ .process__card > div:nth-child(2),
+#p3:checked ~ .process__card > div:nth-child(3),
+#p4:checked ~ .process__card > div:nth-child(4),
+#p5:checked ~ .process__card > div:nth-child(5){
+	visibility: visible;
+	opacity: 1;
+	height: 100%;
+	transition:opacity 0.5s ease 0.5s, visibility 0.5s ease,height 0s ease 0.5s;
+}
+.btn_back{
+	color:#ffffff;
+	border: 2px solid #FFFFFF;
+	border-radius: 50px;
+}
+/**/
 .sotabg{
 	position: absolute;
 	top:40%;
