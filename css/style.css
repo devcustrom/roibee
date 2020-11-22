@@ -918,9 +918,9 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
     justify-content: space-between;
     align-content: space-between;
 	visibility: hidden;
-	height: 0;
+	max-height: 0;
 	opacity:0;
-	transition:opacity 0.5s ease, height 0s ease 0.5s,visibility 0s ease 0.5s;
+	transition:opacity 0.5s ease, max-height 0s ease 0.5s,visibility 0s ease 0.5s;
 }
 .process__modal > p{
 	padding: 6% 0;
@@ -932,8 +932,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 #p5:checked ~ .process__card > .process__modal:nth-child(5){
 	visibility: visible;
 	opacity: 1;
-	height: 100%;
-	transition:opacity 0.5s ease 0.5s,height 0s ease 0.5s,visibility 0s ease 0.5s;
+	max-height: 100vh;
+	transition:opacity 0.5s ease 0.5s,max-height 0s ease 0.5s,visibility 0s ease 0.5s;
 }
 
 /**/
