@@ -21,6 +21,10 @@
 
 }
 ::-webkit-scrollbar-button{background-image:url('');background-repeat:no-repeat;width:5px;height:0}::-webkit-scrollbar-track{background-color:#ecedee}::-webkit-scrollbar-thumb{-webkit-border-radius:0;border-radius:0;background:linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%)}::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%)}::-webkit-resizer{background-image:url('');background-repeat:no-repeat;width:4px;height:0}::-webkit-scrollbar{width:4px;height:4px}
+html{
+	scrollbar-color: var(--fiol) var(--purp);
+  	scrollbar-width: thin;
+}
 body{
 	background:right top no-repeat var(--dark);
 	font-family: 'Montserrat', sans-serif;
