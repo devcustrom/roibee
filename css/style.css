@@ -588,6 +588,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .advan__text-item{
 	padding-top: 10px;
+	width: max-content;
 }
 /*конец блока преимуществ*/
 /*Третий слайд*/
