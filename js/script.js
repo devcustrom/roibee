@@ -81,3 +81,4 @@ for (var i = 0; i < inpcheck.length; i++) {
   });
 }
 };
+function onSubmit(token){document.getElementById("form").submit();}
