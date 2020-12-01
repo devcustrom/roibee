@@ -32,7 +32,7 @@
 	stop-color: #9B51E0;
     }
     100%{
-    stop-color:#5451E0;
+    stop-color:#27ABFF ;
     }
 }</style>
 </defs>

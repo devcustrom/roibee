@@ -81,4 +81,9 @@ for (var i = 0; i < inpcheck.length; i++) {
   });
 }
 };
-function onSubmit(token){document.getElementById("form").submit();}
+function onSubmit(token){document.getElementById("form").submit();document.getElementById('form').style.opacity = '0';
+document.getElementById('send__form').classList.add('send1');
+setTimeout(() => {document.getElementById('form').reset();
+document.getElementById('form').style.opacity = '';
+document.getElementById('send__form').classList.remove('send1');
+}, 6000)}
