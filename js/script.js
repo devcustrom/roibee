@@ -81,7 +81,20 @@ for (var i = 0; i < inpcheck.length; i++) {
   });
 }
 };
-function onSubmit(token){document.getElementById("form").submit();document.getElementById('form').style.opacity = '0';
+(function() {
+  document.getElementById("form").addEventListener("submit", function(event) {
+      console.log('form submitted.');
+      if (!grecaptcha.getResponse()) {
+          console.log('captcha not yet completed.');
+
+          event.preventDefault(); //prevent form submit
+          grecaptcha.execute();
+      } else {
+          console.log('form really submitted.');
+      }
+    });
+})();
+onSubmit = function (){document.getElementById("form").submit();document.getElementById('form').style.opacity = '0';
 document.getElementById('send__form').classList.add('send1');
 setTimeout(() => {document.getElementById('form').reset();
 document.getElementById('form').style.opacity = '';
