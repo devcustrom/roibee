@@ -496,7 +496,8 @@
                 </p>        
             </div>
             <div class="wrapper pos_relative pt-1">
-                
+                <script>var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)"></iframe>
                 <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSceHo28VjZ8QgsyWgFr1T7_TwqbDlinnUHiFliU_d7faXIoAQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
                     <input placeholder="Ваша почта" class="form__area w100" name="entry.183100258" type="email" required />
                     <input placeholder="Ваш номер телефона" class="form__area w100"  name="entry.2081991681" type="tel" required/>
