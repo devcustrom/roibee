@@ -58,13 +58,10 @@ if (http_request) {
   }, 10000);
 }
 function go_online() {
-  //for (var i = 0; i < getbtncls.length; i++) {
-    //getbtncls[i].removeAttribute("disabled", "disabled");
-    //getbtncls[i].value = 'Отправить';
-  //}
-  
-    grecaptcha.execute();
-  
+  for (var i = 0; i < getbtncls.length; i++) {
+    getbtncls[i].removeAttribute("disabled", "disabled");
+    getbtncls[i].value = 'Отправить';
+  } 
 }
 function go_offline() {
   for (var i = 0; i < getbtncls.length; i++) {
@@ -84,7 +81,9 @@ for (var i = 0; i < inpcheck.length; i++) {
     if ( this.checked ) {getbody.classList.add("burg__ovh");} else {getbody.classList.remove("burg__ovh");}
   });
 }
+grecaptcha.execute();
 };
+
 function enablebtn(token) {
 for (var i = 0; i < getbtncls.length; i++) {
   getbtncls[i].removeAttribute("disabled", "disabled");
