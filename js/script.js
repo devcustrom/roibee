@@ -78,10 +78,9 @@ for (var i = 0; i < inpcheck.length; i++) {
     if ( this.checked ) {getbody.classList.add("burg__ovh");} else {getbody.classList.remove("burg__ovh");}
   });
 }
+};
 function enablebtn(token) {
   for (var i = 0; i < getbtncls.length; i++) {
     getbtncls[i].removeAttribute("disabled", "disabled");
     getbtncls[i].value = 'Отправить';
   }}
-};
-
