@@ -772,6 +772,12 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .mb-70px{
 	margin-bottom: 70px;
 }
+.form__area:valid{
+	border:1px solid green;
+}
+.form__area:invalid{
+	border:1px solid red;
+}
 .form__area{
 	max-width: 584px;
 	height: 55px;	
@@ -786,6 +792,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
 	outline:none;
+	transition: border 500ms ease;
 }
 .form{
 	width: max-content;

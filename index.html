@@ -132,8 +132,9 @@
                                         <input class="form__area w100" type="text" placeholder="Есть ли у Вас ответственные за техническую часть сайта?" name="entry.481116620" value="">
                                         <input class="form__area w100" type="text" placeholder="На какие изменения на сайте Вы готовы пойти?" name="entry.536123033" value="">
                                         <input class="form__area w100" type="text" placeholder="Сколько вы готовы выделять средств на услуги в месяц" name="entry.331124920" value="" required>
-                                        <input class="btn form__btn btnclass btn_fiol" type="submit"  data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="onSubmit" data-action="submit" value="Отправить"/>
+                                        <input class="btn form__btn btnclass btn_fiol" type="submit" value="Отправить"/>
                                   </form>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -496,15 +497,24 @@
                 </p>        
             </div>
             <div class="wrapper pos_relative pt-1">
-                <iframe name="hidden_iframe" id="hidden_iframe" class="d-none"></iframe>
-                <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSceHo28VjZ8QgsyWgFr1T7_TwqbDlinnUHiFliU_d7faXIoAQ/formResponse" method="post" target="hidden_iframe">
+                <script>var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="
+                    if(submitted)
+                    {document.getElementById('form').style.opacity = '0';
+                    document.getElementById('send__form').classList.add('send1');
+                    setTimeout(() => {document.getElementById('form').reset();
+                    document.getElementById('form').style.opacity = '';
+                    document.getElementById('send__form').classList.remove('send1');
+                    }, 6000)}
+                    "></iframe>
+                <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSceHo28VjZ8QgsyWgFr1T7_TwqbDlinnUHiFliU_d7faXIoAQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
                     <input placeholder="Ваша почта" class="form__area w100" name="entry.183100258" type="email" required />
                     <input placeholder="Ваш номер телефона" class="form__area w100"  name="entry.2081991681" type="tel" required/>
                     <textarea placeholder="Сообщение......." class="form__area w100" name="entry.714657000" style="min-height: 270px;" required></textarea>
                     <input type="hidden" name="entry.698711001" value="http://127.0.0.1:5500/">
                     <input class="refclass" type="hidden" name="entry.27823824" value="">
-                    <div class="d-none" data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="onSubmit"></div>
-                    <input id="subbtn" class="btn form__btn btnclass btn_fiol g-recaptcha" type="submit" value="Отправить"/>
+                    <div id="recaptcha" class="g-recaptcha" data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="enablebtn" data-size="invisible"></div>
+                    <input class="btn form__btn btnclass btn_fiol" type="submit" value="Вы робот" disabled/>
               </form>
               <div id="send__form" class="send__form">
                 <p>Спасибо за ваше доверие! В ближайшее время с вами свяжутся.</p>
