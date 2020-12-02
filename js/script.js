@@ -83,4 +83,5 @@ function enablebtn(token) {
   for (var i = 0; i < getbtncls.length; i++) {
     getbtncls[i].removeAttribute("disabled", "disabled");
     getbtncls[i].value = 'Отправить';
+    console.log("капча пройдена");
   }}
