@@ -698,7 +698,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .skills__hide-text > li{
 	opacity: 0;
-	transition: opacity 300mss ease;
+	transition: opacity 300ms ease;
 	background-color: transparent;
 }
 .skills__hide-text > li:first-child{
