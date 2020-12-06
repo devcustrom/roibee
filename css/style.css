@@ -382,7 +382,8 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .podrobnee{
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	margin-bottom: 10vh;
 }
 .twitter__icon{
 	background-image: url(../img/svg/twitter.svg);
@@ -772,10 +773,10 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .mb-70px{
 	margin-bottom: 70px;
 }
-.form__area:valid{
+.form__area:focus:valid{
 	border:1px solid green;
 }
-.form__area:invalid{
+.form__area:focus:invalid{
 	border:1px solid red;
 }
 .form__area{
