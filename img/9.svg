@@ -10,13 +10,13 @@
 </linearGradient>
 <style>
 #color1{
-    transition:all 1s ease;
-    animation: logo1 1s linear infinite alternate 0s forwards;
+    transition:all 600ms ease;
+    animation: logo1 600ms linear infinite alternate 0s forwards;
     stop-color:#5451E0;
 }
 #color2{
-    transition:all 1s ease;
-    animation: logo2 1s linear infinite alternate 0s forwards;
+    transition:all 600ms ease;
+    animation: logo2 600ms linear infinite alternate 0s forwards;
     stop-color: #9B51E0;
 }
 @keyframes logo1{

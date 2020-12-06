@@ -59,7 +59,7 @@ transition: background-color 5000s ease-in-out 0s;
 background-color: var(--dark) !important;
 }
 .b-lazy {
-	transition: opacity 1s ease-in-out;
+	transition: opacity 300ms ease-in-out;
 	max-width: 100%;
 	opacity: 0;
 }
@@ -78,7 +78,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	right: 0;
 	z-index: 2;
 	width: 100vw;
-	transition: background 1s ease,height 1s ease,opacity 0.5s ease;
+	transition: background 300ms ease,height 300ms ease,opacity 300ms ease;
 	background: transparent;
 	height: calc(75px + 25 var(--adaptive));
 }
@@ -160,7 +160,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
   
 	background-color: white;
   
-	transition-duration: .5s;
+	transition-duration: 300ms;
   }
   .menu__btn > span::before {
 	content: '';
@@ -256,7 +256,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	align-self: center;
 	width:max-content;
 	cursor: pointer;
-	transition: box-shadow 1s ease,opacity 1s ease;
+	transition: box-shadow 300ms ease,opacity 300ms ease;
 	position: relative;
 	font-weight: 600;
 	letter-spacing: 0.145em;
@@ -383,7 +383,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 .podrobnee{
     margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10vh;
+	margin-bottom: 10v;
 }
 .twitter__icon{
 	background-image: url(../img/svg/twitter.svg);
@@ -396,7 +396,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .circle__btn{
 	background: linear-gradient(180deg, var(--fiol2) 0%, var(--purp2) 100%);
-	margin:10px auto 0 auto;
+	margin:10px auto;
 	position: relative;
 }
 .podrobnee__btn{
@@ -411,7 +411,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-	transition: transform 1s ease;
+	transition: transform 300ms ease;
 	background-size: 50%;
 }
 /*Первый слайд главной конец*/
@@ -693,12 +693,12 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .skills__hide-text{
 	max-height: 50px;
-	transition: max-height 1s ease;
+	transition: max-height 300ms ease;
 	
 }
 .skills__hide-text > li{
 	opacity: 0;
-	transition: opacity 1s ease;
+	transition: opacity 300mss ease;
 	background-color: transparent;
 }
 .skills__hide-text > li:first-child{
@@ -720,7 +720,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	position: fixed;
 	width: 100vw;
 	opacity:0;
-	transition: opacity 1s linear 1s, left 1s linear 2s;
+	transition: opacity 300ms linear 300ms, left 300ms linear 600ms;
 	background-color: var(--dark);
 	top: 0;
 	left: 0;
@@ -732,7 +732,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 }
 .popup__all > div{
 	opacity:0;
-	transition: opacity 0.5s linear 0.5s;
+	transition: opacity 300ms linear 300ms;
 }
 .popup__all::-webkit-scrollbar{width: 0;}
 .popup__all {-ms-overflow-style: none;overflow: -moz-scrollbars-none;}
@@ -743,7 +743,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	top:-100px;
 	right:-100px;
 	z-index: 3;
-	transition: all 1s ease;
+	transition: all 300ms ease;
 	border-radius:0 0 0 45px;
     width: max-content;
     height: max-content;
@@ -793,7 +793,7 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	letter-spacing: 0.03em;
 	color: #FFFFFF;
 	outline:none;
-	transition: border 500ms ease;
+	transition: border 300ms ease;
 }
 .form{
 	width: max-content;
@@ -830,11 +830,11 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	max-width: 584px;
 	margin: auto;
 	opacity:0;
-	transition: opacity 1s ease;
+	transition: opacity 300ms ease;
 }
 .send1,.form{
 	opacity:1;
-	transition: opacity 1s ease;
+	transition: opacity 300ms ease;
 }
 
 /*Форма конец*/
@@ -857,21 +857,6 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	background-image: linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%);
 	transition: width 0.3s ease 0.2s;
 }
-#p1:checked ~ .process__progress > div{
-	width: 20%;
-}
-#p2:checked ~ .process__progress > div{
-	width: 40%;
-}
-#p3:checked ~ .process__progress > div{
-	width: 60%;
-}
-#p4:checked ~ .process__progress > div{
-	width: 80%;
-}
-#p5:checked ~ .process__progress > div{
-	width: 100%;
-}
 .process__punkts{
 	flex-grow: 1;
 	min-width: 450px;
@@ -891,21 +876,12 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
     justify-content: center;
 	align-items: center;
 	padding: 15px;
-	transition: margin ease 0.5s,opacity ease 0.5s;
+	transition: margin ease 0.3s,opacity ease 0.3s;
 	opacity: .6;
 
 }
 .process__punkts > li:last-child{
 	margin-bottom: 0;
-}
-#p1:checked ~ .process__punkts > li:nth-child(1),
-#p2:checked ~ .process__punkts > li:nth-child(2),
-#p3:checked ~ .process__punkts > li:nth-child(3),
-#p4:checked ~ .process__punkts > li:nth-child(4),
-#p5:checked ~ .process__punkts > li:nth-child(5){
-	margin-left: 30px;
-	margin-right: 0;
-	opacity: 1;
 }
 .process__punkts > li::before {
 	counter-increment: num;
@@ -929,22 +905,11 @@ a,label,input,.swiper-button-next,.swiper-button-prev{
 	visibility: hidden;
 	max-height: 0;
 	opacity:0;
-	transition:opacity 0.5s ease, max-height 0s ease 0.5s,visibility 0s ease 0.5s;
+	transition:opacity 0.3s ease, max-height 0s ease 0.3s,visibility 0s ease 0.3s;
 }
 .process__modal > p{
 	padding: 6% 0;
 }
-#p1:checked ~ .process__card > .process__modal:nth-child(1),
-#p2:checked ~ .process__card > .process__modal:nth-child(2),
-#p3:checked ~ .process__card > .process__modal:nth-child(3),
-#p4:checked ~ .process__card > .process__modal:nth-child(4),
-#p5:checked ~ .process__card > .process__modal:nth-child(5){
-	visibility: visible;
-	opacity: 1;
-	max-height: 100vh;
-	transition:opacity 0.5s ease 0.5s,max-height 0s ease 0.5s,visibility 0s ease 0.5s;
-}
-
 /**/
 .sotabg{
 	position: absolute;
