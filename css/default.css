@@ -138,3 +138,6 @@ body{
 .color-black{
 	color: black;
 }
+.block{
+	display: block;
+}

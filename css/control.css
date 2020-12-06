@@ -52,9 +52,9 @@
 #skill__colmn-3:checked ~ .skills__hide-text > li{
 	opacity: 1;
 }
-#skill__colmn-1:checked ~ label > .skills__btn > span,
-#skill__colmn-2:checked ~ label > .skills__btn > span,
-#skill__colmn-3:checked ~ label > .skills__btn > span{
+#skill__colmn-1:checked ~ .skills__btn > span,
+#skill__colmn-2:checked ~ .skills__btn > span,
+#skill__colmn-3:checked ~ .skills__btn > span{
 	transform: rotate(180deg);
 }
 #p1:checked ~ .process__progress > div{
