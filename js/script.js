@@ -58,7 +58,7 @@ if (http_request) {
   }, 10000);
 }
 function go_online() {
-  grecaptcha.execute(); 
+  //grecaptcha.execute(); 
 }
 function go_offline() {
   for (var i = 0; i < getbtncls.length; i++) {
@@ -71,16 +71,17 @@ for (var i = 0; i < reflink.length; i++) {
 }
 for (var i = 0; i < inpcheck.length; i++) {
   inpcheck[i].addEventListener('change', function () {
-    if ( this.checked ) {gethdr.classList.add("opacity0");getbody.classList.add("body__ovh");swiperblck.classList.add("lock__sw");} 
-    else {gethdr.classList.remove("opacity0");getbody.classList.remove("body__ovh");setTimeout(() => {swiperblck.classList.remove("lock__sw");}, 1500);}   
+    if ( this.checked ) {gethdr.classList.add("opacity-0");getbody.classList.add("overflow-hidden");swiperblck.classList.add("lock-swiper");} 
+    else {gethdr.classList.remove("opacity-0");getbody.classList.remove("overflow-hidden");setTimeout(() => {swiperblck.classList.remove("lock-swiper");}, 1500);}   
   });
   document.querySelector('#menu__toggle').addEventListener('change', function () {
-    if ( this.checked ) {getbody.classList.add("burg__ovh");} else {getbody.classList.remove("burg__ovh");}
+    if ( this.checked ) {getbody.classList.add("overflow-hidden");} else {getbody.classList.remove("overflow-hidden");}
   });
 }
+grecaptcha.execute(); 
 };
 function enablebtn(token) {
   for (var i = 0; i < getbtncls.length; i++) {
     getbtncls[i].removeAttribute("disabled", "disabled");
     getbtncls[i].value = 'Отправить';
-  }}
+  }};

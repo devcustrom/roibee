@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development postcss css/full.tailwind.css -o  css/full.css --watch",
+    "build": "cross-env NODE_ENV=production postcss css/full.tailwind.css -o  css/full.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "name": "tail",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

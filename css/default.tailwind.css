@@ -1,0 +1,85 @@
+:root{
+    --dark:#181818;
+    --fiol:#6B68E0;
+    --purp:#781493;
+    --fiol2:#6C6AE4;
+    --purp2:#7A1294;
+	--adaptive: * ((100vw - 320px) / (1920 - 320));
+	--zero: 0s;
+}
+::-webkit-scrollbar-button{background-image:url('');background-repeat:no-repeat;width:5px;height:0}::-webkit-scrollbar-track{background-color:#ecedee}::-webkit-scrollbar-thumb{-webkit-border-radius:0;border-radius:0;background:linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%)}::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,var(--fiol) 0,var(--purp) 100%)}::-webkit-resizer{background-image:url('');background-repeat:no-repeat;width:4px;height:0}::-webkit-scrollbar{width:4px;height:4px}
+.grecaptcha-badge{display:none !important}
+*{
+	scrollbar-color: var(--purp2) #181818;
+  	scrollbar-width: thin;
+}
+body{
+	background:right top no-repeat var(--dark);
+	font-family: 'Montserrat', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 0.145em;
+	background-position-x: 45vw;
+	background-size: 55vw;
+	background-image: url(../img/svg/sota.svg);
+	@apply overflow-x-hidden w-screen text-white;
+}
+.wrapper{
+	@apply container mx-auto;
+	padding: 0 calc(15px + 25 var(--adaptive));
+}
+.adaptive__font35,.column__popup > li{
+	font-size: calc(23px + 12 var(--adaptive));
+}
+.adaptive__font30{
+	font-size: calc(20px + 10 var(--adaptive));
+}
+.adaptive__font28{
+	font-size: calc(18px + 10 var(--adaptive));
+}
+.adaptive__font25{
+	font-size: calc(18px + 7 var(--adaptive));
+}
+.adaptive__font22,
+.process__modal > span{
+	font-size: calc(16px + 6 var(--adaptive));
+}
+.adaptive__font20,
+.column__popup > li > p{
+	font-size: calc(14px + 6 var(--adaptive));
+}
+.adaptive__font18,
+.yarlik,
+.advan__text-item,
+.process__modal > p,
+.process__punkts > li{
+	font-size: calc(14px + 4 var(--adaptive));
+}
+.adaptive__font16,.btn{
+	font-size: calc(12px + 4 var(--adaptive));
+}
+.font-normal,
+.process__modal > p{
+	font-weight: normal;
+}
+.font-bold,
+.process__modal > span,
+{
+	font-weight: bold;
+}
+.pb-8w{
+	padding-bottom: 8vw;
+}
+.pb-1w{
+	padding-bottom: 1vw;
+}
+.mt-5w{
+	margin-top: 5vw;
+}
+.pr-30w{
+	padding-right: 30vw;
+}
+.bg-plb{
+	background-position: left bottom;
+}

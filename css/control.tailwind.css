@@ -1,0 +1,93 @@
+#usluga__1:checked ~ .popup__usluga1,
+#usluga__2:checked ~ .popup__usluga2,
+#usluga__3:checked ~ .popup__usluga3,
+#popup__brif:checked ~ .popup__brif {
+	opacity:1;
+	left:0;
+	transition:opacity 300ms linear 300ms, left 300ms linear;
+}
+#popup__brif:checked ~ .popup__brif > div,
+#usluga__1:checked ~ .popup__usluga1 > div,
+#usluga__2:checked ~ .popup__usluga2 > div,
+#usluga__3:checked ~ .popup__usluga3 > div{
+	opacity:1;
+	left:0;
+}
+#usluga__1:checked ~ .close__btn,
+#usluga__2:checked ~ .close__btn,
+#usluga__3:checked ~ .close__btn,
+#popup__brif:checked ~ .close__btn {
+	opacity:1;
+	right: 0;
+	top: 0;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	right: 0;
+	overflow: auto;
+}
+#menu__toggle:checked ~ .menu__area {
+	display: block;
+}
+#skill__colmn-1:checked ~ .skills__hide-text,
+#skill__colmn-2:checked ~ .skills__hide-text,
+#skill__colmn-3:checked ~ .skills__hide-text{
+	max-height: 550px;
+}
+#skill__colmn-1:checked ~ .skills__hide-text > li:first-child,
+#skill__colmn-1:checked ~ .skills__hide-text > li,
+#skill__colmn-2:checked ~ .skills__hide-text > li:first-child,
+#skill__colmn-2:checked ~ .skills__hide-text > li,
+#skill__colmn-3:checked ~ .skills__hide-text > li:first-child,
+#skill__colmn-3:checked ~ .skills__hide-text > li{
+	opacity: 1;
+}
+#skill__colmn-1:checked ~ .skills__btn > span,
+#skill__colmn-2:checked ~ .skills__btn > span,
+#skill__colmn-3:checked ~ .skills__btn > span{
+	transform: rotate(180deg);
+}
+#p1:checked ~ .process__progress > div{
+	width: 20%;
+}
+#p2:checked ~ .process__progress > div{
+	width: 40%;
+}
+#p3:checked ~ .process__progress > div{
+	width: 60%;
+}
+#p4:checked ~ .process__progress > div{
+	width: 80%;
+}
+#p5:checked ~ .process__progress > div{
+	width: 100%;
+}
+#p1:checked ~ .process__punkts > li:nth-child(1),
+#p2:checked ~ .process__punkts > li:nth-child(2),
+#p3:checked ~ .process__punkts > li:nth-child(3),
+#p4:checked ~ .process__punkts > li:nth-child(4),
+#p5:checked ~ .process__punkts > li:nth-child(5){
+	margin-left: 30px;
+	margin-right: 0;
+	opacity: 1;
+}
+#p1:checked ~ .process__card > .process__modal:nth-child(1),
+#p2:checked ~ .process__card > .process__modal:nth-child(2),
+#p3:checked ~ .process__card > .process__modal:nth-child(3),
+#p4:checked ~ .process__card > .process__modal:nth-child(4),
+#p5:checked ~ .process__card > .process__modal:nth-child(5){
+	visibility: visible;
+	opacity: 1;
+	max-height: 100vh;
+	transition:opacity 0.3s linear 0.3s,max-height var(--zero) linear 0.3s,visibility var(--zero) linear 0.3s;
+}

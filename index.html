@@ -9,34 +9,30 @@
         Летит РойПчел
     </title>
     <link rel="shortcut icon" href="img/9.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/control.css">
     <link rel="preconnect" href="//fonts.gstatic.com">
-    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    
     
     <meta name="color-scheme" content="normal">
 </head>
 <body id="body">
     <header class="header inactiveheader" id="header">
-        <div class="wrapper h100" >
-            <div class="flex no-wrap align-center h100" id="wrapper__header">
+        <div class="wrapper h-full" >
+            <div class="flex flex-nowrap items-center h-full" id="wrapper__header">
                 <div class="header__logo">
                     <a href="/" class="header__logo-link">
                         <img style="height: 30px;" class="logo__img b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/9.svg" alt="Logo">
                     </a>
                 </div>
-                <nav class="header__nav flex just-end hamburger-menu">
+                <nav class="header__nav flex justify-end hamburger-menu">
                     
-                    <input id="menu__toggle" type="checkbox" />
+                    <input id="menu__toggle" class="hidden" type="checkbox" />
                     <label class="menu__btn hide__btn" for="menu__toggle">
                     <span></span>
                     </label>
                     <label class="menu__area" for="menu__toggle"></label>
-                    <ul class="flex no-wrap menu__box">
+                    <ul class="flex flex-nowrap menu__box">
                         <li class="header__item">
                             <a href="#!" class="list__link menu__item">Главная</a>
                         </li>
@@ -58,8 +54,8 @@
     <main class="main b-lazy" data-src="img/svg/pryamougol.svg">
         <section id="slide_1" class="intro slide__one">
             <div class="wrapper">
-                <div class="first__slide pos_relative">
-                    <div class="first__block-text w100">
+                <div class="flex flex-wrap h-screen relative">
+                    <div class="first__block-text w-full">
                         <div class="textblock__landing">
                             <div class="text__landing">
                                 <p class="text__landing-big adaptive__font30">СТУДИЯ ВЕБ-ДИЗАЙНА</p>
@@ -67,27 +63,27 @@
                             </div>
                         
                         <label for="popup__brif" class="btn btn_fiol first__slide-btn btn_fiol">Заполнить бриф</label>
-                        <input id="popup__brif" class="inputcheck" type="checkbox" />
+                        <input id="popup__brif" class="inputcheck hidden" type="checkbox" />
                         <label class="close__btn btn_fiol" for="popup__brif"><span></span></label> 
                         <div class="popup__all popup__brif">
                             <div class="wrapper">
-                                <div class="popup__content pos_relative">
+                                <div class="flex flex-col relative">
                                     <form name="contact_form" id="form__brif" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSdl3xsRAsDFcVqZkO_5B79oXQlSugRiw0Gjic5x8Jl96yJuww/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
                                         <input type="hidden" name="entry.1126189283" value="">
                                         <input type="hidden" class="refclass" name="entry.206925871" value="">
-                                        <input class="form__area w100" type="text" placeholder="Название компании" name="entry.363773695" value=""  required>
-                                        <input class="form__area w100" type="text" placeholder="Контактное лицо" name="entry.1853621668" value="" required>
-                                        <input class="form__area w100" type="tel" placeholder="Телефон" name="entry.1343918706" value="" required>
-                                        <input class="form__area w100" type="email" placeholder="E-mail" name="entry.1289732670" value="" required>
-                                        <input class="form__area w100" type="text" placeholder="Ссылка на сайт или соцсеть для продвижения" name="entry.1421884975" value="">
-                                        <input class="form__area w100" type="text" placeholder="Чем занимается компания" name="entry.649637396" value="" required>
-                                        <input class="form__area w100" type="text" placeholder="Целевая аудитория (Возраст, материальное положение, пол, род занятий и профессий)" name="entry.872673331" value="">
-                                        <input class="form__area w100" type="text" placeholder="Укажите список ваших конкурентов" name="entry.1709936301" value="">
-                                        <input class="form__area w100" type="text" placeholder="Принцы работы и ценности вашей компании" name="entry.272245033" value="">
-                                        <input class="form__area w100" type="text" placeholder="Ваши уникальные преимущества перед конкурентами" name="entry.2132189368" value="">
-                                        <input class="form__area w100" type="text" placeholder="Какие проблемы решает ваш товар или услуга" name="entry.1719184576" value="">
-                                        <input class="form__area w100" type="text" placeholder="Основные цели компании" name="entry.989657775" value="">
-                                        <input class="form__area w100" type="text" placeholder="Какие виды услуг или товаров. Вы планируете продвигать в порядке приоритета?" name="entry.60570028" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Название компании" name="entry.363773695" value=""  required>
+                                        <input class="form__area w-full" type="text" placeholder="Контактное лицо" name="entry.1853621668" value="" required>
+                                        <input class="form__area w-full" type="tel" placeholder="Телефон" name="entry.1343918706" value="" required>
+                                        <input class="form__area w-full" type="email" placeholder="E-mail" name="entry.1289732670" value="" required>
+                                        <input class="form__area w-full" type="text" placeholder="Ссылка на сайт или соцсеть для продвижения" name="entry.1421884975" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Чем занимается компания" name="entry.649637396" value="" required>
+                                        <input class="form__area w-full" type="text" placeholder="Целевая аудитория (Возраст, материальное положение, пол, род занятий и профессий)" name="entry.872673331" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Укажите список ваших конкурентов" name="entry.1709936301" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Принцы работы и ценности вашей компании" name="entry.272245033" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Ваши уникальные преимущества перед конкурентами" name="entry.2132189368" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Какие проблемы решает ваш товар или услуга" name="entry.1719184576" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Основные цели компании" name="entry.989657775" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Какие виды услуг или товаров. Вы планируете продвигать в порядке приоритета?" name="entry.60570028" value="">
                                         
                                             <input type="checkbox" name="entry.751444005" value="Разработка сайт" >
                                             Разработка сайт
@@ -127,9 +123,9 @@
                                             <input type="checkbox" name="entry.751444005" value="__other_option__" >
                                         
                                         <input type="text" name="entry.751444005.other_option_response" placeholder="custom value">
-                                        <input class="form__area w100" type="text" placeholder="Есть ли у Вас ответственные за техническую часть сайта?" name="entry.481116620" value="">
-                                        <input class="form__area w100" type="text" placeholder="На какие изменения на сайте Вы готовы пойти?" name="entry.536123033" value="">
-                                        <input class="form__area w100" type="text" placeholder="Сколько вы готовы выделять средств на услуги в месяц" name="entry.331124920" value="" required>
+                                        <input class="form__area w-full" type="text" placeholder="Есть ли у Вас ответственные за техническую часть сайта?" name="entry.481116620" value="">
+                                        <input class="form__area w-full" type="text" placeholder="На какие изменения на сайте Вы готовы пойти?" name="entry.536123033" value="">
+                                        <input class="form__area w-full" type="text" placeholder="Сколько вы готовы выделять средств на услуги в месяц" name="entry.331124920" value="" required>
                                         <div class="g-recaptcha" data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="enablebtn" data-size="invisible"></div>
                                         <input class="btn form__btn btnclass btn_fiol" type="submit" value="Вы робот" disabled/>
                                   </form>
@@ -147,7 +143,7 @@
                             <a href="#!" rel="nofollow" class="twitter__icon">Наш твиттер</a>
                             <span></span> 
                         </div>
-                        <div class="podrobnee adaptive__font16  w100">
+                        <div class="podrobnee adaptive__font16  w-full">
                             <p>Подробнее</p>
                             <a href="#podr">
                                 <div class="podrobnee__btn circle__btn btn_fiol">
@@ -164,7 +160,7 @@
             <div class="yarlik yarlik_r">
                 <p>Мы делаем</p>        
             </div>
-            <div class="wrapper mh370 pos_relative">
+            <div class="wrapper mh370 relative">
                 <div class="skills__item">
                     <div class="skills__elem">
                         <div class="skills__block">
@@ -250,12 +246,12 @@
             </div>
         </section>
         <section>
-            <div class="wrapper block__advantages">
+            <div class="wrapper">
                 <div class="text__i adaptive__font28">
                     <p>В чём наши преимущества?</p>
                 </div>
-                <div class="icon__block">
-                    <div class="advantages__item">
+                <div class="flex flex-wrap justify-around">
+                    <div class="flex flex-col items-center text-center advantages__item">
                         <div class="advan__icon-item b-lazy" data-src="img/svg/iconadvan.svg">
                                                            
                         </div>
@@ -265,8 +261,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="advantages__item">
-                        <div class="advan__icon-item b-lazy" data-src="img/svg/iconadvan.svg">
+                    <div class="flex flex-col items-center text-center advantages__item">
+                        <div class="advan__icon-item bg-center bg-no-repeat bg-cover b-lazy" data-src="img/svg/iconadvan.svg">
                                                            
                         </div>
                         <div class="advan__text-item">
@@ -275,8 +271,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="advantages__item">
-                        <div class="advan__icon-item b-lazy" data-src="img/svg/iconadvan.svg">
+                    <div class="flex flex-col items-center text-center advantages__item">
+                        <div class="advan__icon-item bg-center bg-no-repeat bg-cover b-lazy" data-src="img/svg/iconadvan.svg">
                                                            
                         </div>
                         <div class="advan__text-item">
@@ -285,8 +281,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="advantages__item">
-                        <div class="advan__icon-item b-lazy" data-src="img/svg/iconadvan.svg">
+                    <div class="flex flex-col items-center text-center advantages__item">
+                        <div class="advan__icon-item bg-center bg-no-repeat bg-cover b-lazy" data-src="img/svg/iconadvan.svg">
                                                            
                         </div>
                         <div class="advan__text-item">
@@ -295,8 +291,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="advantages__item">
-                        <div class="advan__icon-item b-lazy" data-src="img/svg/iconadvan.svg">
+                    <div class="flex flex-col items-center text-center advantages__item">
+                        <div class="advan__icon-item bg-center bg-no-repeat bg-cover b-lazy" data-src="img/svg/iconadvan.svg">
                                                            
                         </div>
                         <div class="advan__text-item">
@@ -321,32 +317,32 @@
                 <p>Услуги</p>        
             </div>
             <div class="swiper-scrollbar">
-                <div class="swiper-scrollbar-drag w100"></div>
+                <div class="swiper-scrollbar-drag w-full"></div>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-            <div class="block__uslug-card swiper-wrapper w100">
-                <div class="swiper-slide w100">
+            <div class="block__uslug-card swiper-wrapper w-full">
+                <div class="m-auto w-full">
                     <div class="card__uslug">
                         <p class="text">
                             Дизайн сайтов
                         </p>
                         <div class="card__uslug-flex">
-                            <div class="block__img-price w100">
+                            <div class="block__img-price w-full">
                                 <div class="img__uslug b-lazy swiper-lazy" data-src="img/webdev.png" data-background="img/webdev.png"></div>
-                                <div class="uslug__price color-black"><p>от 20.000 ₽</p></div>
+                                <div class="uslug__price text-black"><p>от 20.000 ₽</p></div>
                             </div>
-                            <div class="text__uslug w100">
+                            <div class="text__uslug w-full">
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
                                 <p>Lorem ipsum dolor sit amet</p>
-                                <label class="btn btn_white btn__podrob-text sm__m-auto" for="usluga__1">Подробнее</label>
-                                <input id="usluga__1" class="inputcheck" type="checkbox" />
+                                <label class="btn btn_white btn__podrob-text m-auto" for="usluga__1">Подробнее</label>
+                                <input id="usluga__1" class="inputcheck hidden" type="checkbox" />
                                 <label class="close__btn btn_fiol" for="usluga__1"><span></span></label>   
                                 <div class="popup__all popup__usluga1">
                                     
-                                        <div class="pos_relative b-lazy bg-plb bg-rnr footer__popup-bg" data-src="img/svg/footbg.svg">
+                                        <div class="relative b-lazy bg-left-bottom bg-no-repeat footer__popup-bg" data-src="img/svg/footbg.svg">
                                              <section class="wrapper">
                                                  <div class="name__uslug adaptive__font30">
                                                     <p>Дизайн сайтов</p>
@@ -355,7 +351,7 @@
                                                     <p>Наши услуги:</p>
                                                  </div>
                                                  <div class="block__uslug-popup">
-                                                     <div class="w100 img__popup-countainer">
+                                                     <div class="w-full img__popup-countainer">
                                                         <div class="img__popup-uslug"></div>
                                                      </div>
                                                      <div class="punkts__button">
@@ -371,7 +367,7 @@
                                                          <li>✔️
                                                              Создание логотипов, если потребуется</li>
                                                      </ul>
-                                                     <label class="btn btn_white color-white color-black m_auto mt-5w" for="usluga__1">Заказать дизайн</label>
+                                                     <label class="btn btn_white text-white text-black m-auto mt-5w" for="usluga__1">Заказать дизайн</label>
                                                     </div>
                                                  </div>
                                                 
@@ -415,15 +411,15 @@
                 <p>Процесс
                 </p>        
             </div>
-            <div class="wrapper pos_relative pt-1">
-                <div class="flex just-center process__block">
-                    <input id="p1" class="d-none" name="test" type="radio" checked>
-                    <input id="p2" class="d-none" name="test" type="radio">
-                    <input id="p3" class="d-none" name="test" type="radio">
-                    <input id="p4" class="d-none" name="test" type="radio">
-                    <input id="p5" class="d-none" name="test" type="radio">
-                    <div class="process__progress d-none"><div></div></div>
-                    <ul class="flex wrap direction-col process__punkts">
+            <div class="wrapper relative pt-1vh">
+                <div class="flex justify-center process__block">
+                    <input id="p1" class="hidden" name="test" type="radio" checked>
+                    <input id="p2" class="hidden" name="test" type="radio">
+                    <input id="p3" class="hidden" name="test" type="radio">
+                    <input id="p4" class="hidden" name="test" type="radio">
+                    <input id="p5" class="hidden" name="test" type="radio">
+                    <div class="process__progress hidden"><div></div></div>
+                    <ul class="flex flex-wrap flex-col process__punkts">
                       <li>Заполнение брифа</li>
                       <li>Изучение заявки</li>
                       <li>Обсуждение деталей</li>
@@ -432,47 +428,47 @@
                     </ul>
                     <div class="process__card">
                      <div class="process__modal">
-                      <span class="sm__m-auto">ЗАЯВКА</span>
+                      <span class="m-auto">ЗАЯВКА</span>
                       <p>lorem upsun dolor sit amet. Всем привет, я тут написал кое что важное, чтобы
                   заполнить эту чёртову строку текста и заполнить сам блок текстом про нас.
                   Но так как я ничего кроме этого текста не мог придумать и лорем искать мне
                   лень, я решил накатать этот текст как альтернативу. И да, мне лень тыкнуть
                   два клика ЛОрема чем писать такой текст самому и придумывать его на ходу</p>
-                      <label class="ml_auto btn btn_white color-black" for="p2">Вперед</label>
+                      <label class="ml-auto btn btn_white text-black" for="p2">Вперед</label>
                   </div>
                        
                          <div class="process__modal">
-                           <span class="sm__m-auto">ЗАЯВКА2</span>
+                           <span class="m-auto">ЗАЯВКА2</span>
                            <p>2lorem upsun dolor sit amet. Всем привет, я тут написал кое что важное, чтобы
                   заполнить эту чёртову строку текста и заполнить сам блок текстом про нас.
                   Но так как я ничего кроме этого текста не мог придумать и лорем искать мне
                   лень, я решил накатать этот текст как альтернативу. И да, мне лень тыкнуть
                   два клика ЛОрема чем писать такой текст самому и придумывать его на ходу</p>
                         <label class="btn btn_back" for="p1">Назад</label>
-                        <label class="btn btn_white color-black" for="p3">Вперед</label>
+                        <label class="btn btn_white text-black" for="p3">Вперед</label>
                        </div>
                       <div class="process__modal">
-                           <span class="sm__m-auto">ЗАЯВКА 3</span>
+                           <span class="m-auto">ЗАЯВКА 3</span>
                            <p>3lorem upsun dolor sit amet. Всем привет, я тут написал кое что важное, чтобы
                   заполнить эту чёртову строку текста и заполнить сам блок текстом про нас.
                   Но так как я ничего кроме этого текста не мог придумать и лорем искать мне
                   лень, я решил накатать этот текст как альтернативу. И да, мне лень тыкнуть
                   два клика ЛОрема чем писать такой текст самому и придумывать его на ходу</p>
                         <label class="btn btn_back" for="p2">Назад</label>
-                        <label class="btn btn_white color-black" for="p4">Вперед</label>
+                        <label class="btn btn_white text-black" for="p4">Вперед</label>
                        </div>
                       <div class="process__modal">
-                           <span class="sm__m-auto">ЗАЯВКА 4</span>
+                           <span class="m-auto">ЗАЯВКА 4</span>
                            <p>4lorem upsun dolor sit amet. Всем привет, я тут написал кое что важное, чтобы
                   заполнить эту чёртову строку текста и заполнить сам блок текстом про нас.
                   Но так как я ничего кроме этого текста не мог придумать и лорем искать мне
                   лень, я решил накатать этот текст как альтернативу. И да, мне лень тыкнуть
                   два клика ЛОрема чем писать такой текст самому и придумывать его на ходу</p>
                         <label class="btn btn_back" for="p3">Назад</label>
-                        <label class="btn btn_white color-black" for="p5">Вперед</label>
+                        <label class="btn btn_white text-black" for="p5">Вперед</label>
                        </div>
                        <div class="process__modal">
-                        <span class="sm__m-auto">ЗАЯВКА 5</span>
+                        <span class="m-auto">ЗАЯВКА 5</span>
                         <p>5lorem upsun dolor sit amet. Всем привет, я тут написал кое что важное, чтобы
                заполнить эту чёртову строку текста и заполнить сам блок текстом про нас.
                Но так как я ничего кроме этого текста не мог придумать и лорем искать мне
@@ -489,27 +485,27 @@
                 <p>Связаться с нами
                 </p>        
             </div>
-            <div class="wrapper pos_relative pt-1">
+            <div class="wrapper relative pt-1">
                 <script>var submitted=false;</script>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="
                     if(submitted)
-                    {document.getElementById('form').style.opacity = '0';
-                    document.getElementById('send__form').classList.add('send1');
+                    {document.getElementById('form').classList.add('opacity-0');
+                    document.getElementById('send__form').classList.add('opacity-100');
                     setTimeout(() => {document.getElementById('form').reset();
-                    document.getElementById('form').style.opacity = '';
-                    document.getElementById('send__form').classList.remove('send1');
+                    document.getElementById('form').classList.remove('opacity-0');
+                    document.getElementById('send__form').classList.remove('opacity-100');
                     }, 6000)}
                     "></iframe>
                 <form name="contact_form" id="form" class="form" action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSceHo28VjZ8QgsyWgFr1T7_TwqbDlinnUHiFliU_d7faXIoAQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true">
-                    <input placeholder="Ваша почта" class="form__area w100" name="entry.183100258" type="email" required />
-                    <input placeholder="Ваш номер телефона" class="form__area w100"  name="entry.2081991681" type="tel" required/>
-                    <textarea placeholder="Сообщение......." class="form__area w100" name="entry.714657000" style="min-height: 270px;" required></textarea>
+                    <input placeholder="Ваша почта" class="form__area w-full" name="entry.183100258" type="email" required />
+                    <input placeholder="Ваш номер телефона" class="form__area w-full"  name="entry.2081991681" type="tel" required/>
+                    <textarea placeholder="Сообщение......." class="form__area w-full" name="entry.714657000" style="min-height: 270px;" required></textarea>
                     <input type="hidden" name="entry.698711001" value="http://127.0.0.1:5500/">
                     <input class="refclass" type="hidden" name="entry.27823824" value="">
                     <div class="g-recaptcha" data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="enablebtn" data-size="invisible"></div>
                     <input class="btn form__btn btnclass btn_fiol" type="submit" value="Вы робот" disabled/>
               </form>
-              <div id="send__form" class="send__form">
+              <div id="send__form" class="send__form opacity-0 m-auto text-center inset-0 flex items-center justify-center text-white absolute">
                 <p>Спасибо за ваше доверие! В ближайшее время с вами свяжутся.</p>
             </div>
             </div>
