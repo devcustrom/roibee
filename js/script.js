@@ -8,6 +8,10 @@ var gethdr = document.getElementById("header");
 var swiperblck = document.getElementById("slide_uslug");
 var reflink = document.querySelectorAll('.refclass');
 var getbtncls = document.querySelectorAll('.btnclass');
+var addscript = document.createElement('script');
+addscript.setAttribute('src','/js/swiper.js');
+addscript.setAttribute('src','https://www.google.com/recaptcha/api.js');
+document.body.appendChild(addscript);
 window.onscroll = function() {scrollFunction()};
 var h = 50;//window.innerHeight/4;
 function scrollFunction() {
@@ -78,7 +82,7 @@ for (var i = 0; i < inpcheck.length; i++) {
     if ( this.checked ) {getbody.classList.add("overflow-hidden");} else {getbody.classList.remove("overflow-hidden");}
   });
 }
-grecaptcha.execute(); 
+grecaptcha.execute();
 };
 function enablebtn(token) {
   for (var i = 0; i < getbtncls.length; i++) {
