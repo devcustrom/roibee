@@ -9,12 +9,6 @@
         Летит РойПчел
     </title>
     <link rel="shortcut icon" href="img/9.svg" type="image/svg+xml">
-    <link rel="preconnect" href="//fonts.gstatic.com">
-    <link rel="preload" href="css/full.css" as="style">
-    <link rel="preload" href="css/default.css" as="style">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="preload" href="css/media.css" as="style">
-    <link rel="preload" href="css/control.css" as="style">
     <link rel="stylesheet" href="css/all.css">
     
     
@@ -26,7 +20,7 @@
             <div class="flex flex-nowrap items-center h-full" id="wrapper__header">
                 <div class="header__logo">
                     <a href="/" class="header__logo-link">
-                        <img style="height: 30px;" class="logo__img b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        <img style="height: 30px;width:154px;" class="logo__img b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/9.svg" alt="Logo">
                     </a>
                 </div>
@@ -56,8 +50,8 @@
         </div>
         
     </header>  
-    <main class="main b-lazy" data-src="img/svg/pryamougol.svg">
-        <section id="slide_1" class="intro slide__one">
+    <main class="main b-lazy b-loaded" data-src="img/svg/pryamougol.svg">
+        <section id="slide_1" class="intro slide__one show-main">
             <div class="wrapper">
                 <div class="flex flex-wrap h-screen relative">
                     <div class="first__block-text w-full">
@@ -520,5 +514,6 @@
         <p>© RoiBee 2020<br><a href="#!">Политика конфиденциальности</a> | <a href="#!">Все права защищены</a></p>
     </footer>
     <script async src="/js/script.js"></script>
+    <style>body{opacity:1}</style>
 </body>
 </html>

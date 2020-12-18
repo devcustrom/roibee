@@ -20,9 +20,9 @@ else {gethdr.classList.remove("activeheader");}
 };
 window.onload = function(){
 window.replainSettings = { id: '81269575-79a9-4b89-b277-eb8fd4a93fa5' };
-(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
+setTimeout(() => {(function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js');
+})('https://widget.replain.cc/dist/client.js');}, 6000);
 var http_request;
 var offline=true;
 if (window.XMLHttpRequest) {
