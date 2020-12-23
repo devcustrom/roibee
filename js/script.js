@@ -8,6 +8,7 @@ var gethdr = document.getElementById("header");
 var swiperblck = document.getElementById("slide_uslug");
 var reflink = document.querySelectorAll('.refclass');
 var getbtncls = document.querySelectorAll('.btnclass');
+var getspam = document.querySelectorAll('.spam');
 var addscript = document.createElement('script');
 addscript.setAttribute('src','/js/swiper.js');
 addscript.setAttribute('src','https://www.google.com/recaptcha/api.js');
@@ -88,4 +89,8 @@ function enablebtn(token) {
   for (var i = 0; i < getbtncls.length; i++) {
     getbtncls[i].removeAttribute("disabled", "disabled");
     getbtncls[i].value = 'Отправить';
-  }};
+  }
+  for (var i = 0; i < getspam.length; i++) {
+    getspam[i].value = 'Не спамер';
+  }
+};

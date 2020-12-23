@@ -137,29 +137,16 @@ label{
 	left: 0;
 	right: 0;
 }
-.intro{
-	min-height: 100vh;
-	position: relative;
-	width: 100vw;
-}
 /*Первый слайд главной*/
 .textblock__landing{
 	max-height: 80vh;
 	margin:auto auto auto 0;
 	padding-top: 70px;
 	height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding: 40px 0px;
 }
 .first__block-text{
 	min-height:80%;
-	display: flex;
-	flex-wrap: wrap;
-}
-.text__landing{
-	
 }
 .text__landing-big{
 	font-style: normal;

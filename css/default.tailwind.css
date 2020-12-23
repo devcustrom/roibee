@@ -23,7 +23,7 @@ body{
 	background-position-x: 45vw;
 	background-size: 55vw;
 	background-image: url(../img/svg/sota.svg);
-	@apply overflow-x-hidden w-screen text-white;
+	@apply overflow-x-hidden w-full max-w-full text-white;
 }
 .wrapper{
 	@apply container mx-auto;

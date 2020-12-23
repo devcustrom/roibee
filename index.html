@@ -8,9 +8,15 @@
     <title>
         Летит РойПчел
     </title>
+    <link rel="preconnect" href="https://widget.replain.cc/">
     <link rel="shortcut icon" href="img/9.svg" type="image/svg+xml">
+    <link rel="preload" href="css/full.css" as="style">
+    <link rel="preload" href="css/default.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/media.css" as="style">
+    <link rel="preload" href="css/control.css" as="style">
     <link rel="stylesheet" href="css/all.css">
-    
+    <style>body{opacity:0;transition: opacity 1s ease 400ms;}</style>
     
     <meta name="color-scheme" content="normal">
 </head>
@@ -20,7 +26,7 @@
             <div class="flex flex-nowrap items-center h-full" id="wrapper__header">
                 <div class="header__logo">
                     <a href="/" class="header__logo-link">
-                        <img style="height: 30px;width:154px;" class="logo__img b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        <img style="height: 30px;" class="logo__img b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-src="img/9.svg" alt="Logo">
                     </a>
                 </div>
@@ -51,11 +57,11 @@
         
     </header>  
     <main class="main b-lazy b-loaded" data-src="img/svg/pryamougol.svg">
-        <section id="slide_1" class="intro slide__one show-main">
+        <section id="slide_1" class="min-h-screen relative w-full">
             <div class="wrapper">
                 <div class="flex flex-wrap h-screen relative">
-                    <div class="first__block-text w-full">
-                        <div class="textblock__landing">
+                    <div class="first__block-text w-full flex flex-wrap">
+                        <div class="textblock__landing flex flex-col justify-evenly">
                             <div class="text__landing">
                                 <p class="text__landing-big adaptive__font30">СТУДИЯ ВЕБ-ДИЗАЙНА</p>
                                 <p class="text__landing-lit adaptive__font25">Минимализм и удобство!</p>
@@ -501,6 +507,7 @@
                     <textarea placeholder="Сообщение......." class="form__area w-full" name="entry.714657000" style="min-height: 270px;" required></textarea>
                     <input type="hidden" name="entry.698711001" value="http://127.0.0.1:5500/">
                     <input class="refclass" type="hidden" name="entry.27823824" value="">
+                    <input class="spam" type="hidden" name="entry.1032011634" value="Робот">
                     <div class="g-recaptcha" data-sitekey="6Le_2vEZAAAAAFguuFHWVFIQxjdD_a9P1oT2pk71" data-callback="enablebtn" data-size="invisible"></div>
                     <input class="btn form__btn btnclass btn_fiol" type="submit" value="Вы робот" disabled/>
               </form>

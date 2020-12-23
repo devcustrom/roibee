@@ -52,10 +52,11 @@ body {
   background-position-x: 45vw;
   background-size: 55vw;
   background-image: url(../img/svg/sota.svg);
+  max-width: 100%;
   overflow-x: hidden;
   --tw-text-opacity: 1;
   color: rgba(255,255,255,var(--tw-text-opacity));
-  width: 100vw
+  width: 100%
 }
 .wrapper {
   width: 100%;
