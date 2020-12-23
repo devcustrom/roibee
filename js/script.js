@@ -74,15 +74,56 @@ function go_offline() {
 for (var i = 0; i < reflink.length; i++) {
   reflink[i].value = document.referrer;
 }
+function popup_chk() {
+  gethdr.classList.add("opacity-0");
+  getbody.classList.add("overflow-hidden");
+  swiperblck.classList.add("lock-swiper");
+}
+function popup_unchk(){
+  gethdr.classList.remove("opacity-0");
+  getbody.classList.remove("overflow-hidden");
+  setTimeout(() => {swiperblck.classList.remove("lock-swiper");}, 1500);
+}
+function popup_all(){
+  for (var i = 0; i < inpcheck.length; i++) {
+    if (inpcheck[i].checked = true) {
+      inpcheck[i].checked = false;
+      popup_unchk();
+    }
+    
+}
+}
 for (var i = 0; i < inpcheck.length; i++) {
   inpcheck[i].addEventListener('change', function () {
-    if ( this.checked ) {gethdr.classList.add("opacity-0");getbody.classList.add("overflow-hidden");swiperblck.classList.add("lock-swiper");} 
-    else {gethdr.classList.remove("opacity-0");getbody.classList.remove("overflow-hidden");setTimeout(() => {swiperblck.classList.remove("lock-swiper");}, 1500);}   
-  });
-  document.querySelector('#menu__toggle').addEventListener('change', function () {
-    if ( this.checked ) {getbody.classList.add("overflow-hidden");} else {getbody.classList.remove("overflow-hidden");}
-  });
+    if ( this.checked ) {
+      history.pushState(null, null);
+      window.onpopstate = function(event) {
+        popup_all();
+        window.onpopstate = null;
+      }
+      popup_chk();
+      } 
+    else {
+      popup_unchk();
+      }   
+  });}
+function menu_chk(){
+  getbody.classList.add("overflow-hidden");
 }
+function menu_unchk(){
+  getbody.classList.remove("overflow-hidden");
+}
+  document.querySelector('#menu__toggle').addEventListener('change', function () {
+    if ( this.checked ) {history.pushState(null, null);
+      window.onpopstate = function(event) {
+          if (document.querySelector('#menu__toggle').checked = true) {
+            menu_unchk();
+            document.querySelector('#menu__toggle').checked = false;
+          }
+          window.onpopstate = null;
+      };menu_chk();} 
+    else {menu_unchk();}
+  });
 grecaptcha.execute();
 };
 function enablebtn(token) {
@@ -94,3 +135,4 @@ function enablebtn(token) {
     getspam[i].value = 'Не спамер';
   }
 };
+ 
