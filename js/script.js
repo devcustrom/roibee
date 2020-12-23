@@ -126,16 +126,15 @@ function menu_unchk(){
   });
 grecaptcha.execute();
 const anchors = document.querySelectorAll('a[href*="#"]')
-
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
+    menu_unchk();
+    document.querySelector('#menu__toggle').checked = false;
     e.preventDefault()
-    
     const blockID = anchor.getAttribute('href').substr(1)
-    
     document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+    behavior: 'smooth',
+    block: 'start'
     })
   })
 }
