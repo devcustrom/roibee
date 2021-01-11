@@ -76,12 +76,13 @@ for (var i = 0; i < reflink.length; i++) {
 }
 function popup_chk() {
   gethdr.classList.add("opacity-0");
-  getbody.classList.add("overflow-hidden");
+  bodyLock();
   swiperblck.classList.add("lock-swiper");
 }
 function popup_unchk(){
   gethdr.classList.remove("opacity-0");
   getbody.classList.remove("overflow-hidden");
+  getbody.style.paddingRight = '0px';
   setTimeout(() => {swiperblck.classList.remove("lock-swiper");}, 1500);
 }
 function popup_all(){
@@ -108,10 +109,13 @@ for (var i = 0; i < inpcheck.length; i++) {
       }   
   });}
 function menu_chk(){
-  getbody.classList.add("overflow-hidden");
+  //getbody.classList.add("overflow-hidden");
+  bodyLock();
 }
 function menu_unchk(){
   getbody.classList.remove("overflow-hidden");
+  getbody.style.paddingRight = '0px';
+
 }
   document.querySelector('#menu__toggle').addEventListener('change', function () {
     if ( this.checked ) {history.pushState(null, null);
@@ -148,4 +152,8 @@ function enablebtn(token) {
     getspam[i].value = 'Не спамер';
   }
 };
- 
+function bodyLock() {
+  const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+  getbody.style.paddingRight = lockPaddingValue;
+  getbody.classList.add('overflow-hidden');
+}

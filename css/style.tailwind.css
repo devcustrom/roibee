@@ -616,17 +616,8 @@ label{
 /*Skills end*/
 /*PopUp All*/
 .popup__all{
-	position: fixed;
-	width: 100vw;
-	opacity:0;
-	transition: opacity 300ms linear 300ms, left 300ms linear 600ms;
+	@apply fixed w-screen opacity-0 inset-0 overflow-y-scroll invisible transition-all duration-300;
 	background-color: var(--dark);
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	left:-100%;
-	overflow-y: scroll;
 	z-index: 2;
 }
 .popup__all > div{

@@ -1,26 +1,21 @@
 #popup__brif:checked ~ .popup__brif,
-#usluga__1:checked ~ .popup__usluga1,
-#usluga__2:checked ~ .popup__usluga2,
-#usluga__3:checked ~ .popup__usluga3 {
-  opacity: 1;
-  left: 0;
-  -webkit-transition: opacity .3s linear .3s,left .3s linear;
-  transition: opacity .3s linear .3s,left .3s linear
-}
 #popup__brif:checked ~ .popup__brif > div,
+#usluga__1:checked ~ .popup__usluga1,
 #usluga__1:checked ~ .popup__usluga1 > div,
+#usluga__2:checked ~ .popup__usluga2,
 #usluga__2:checked ~ .popup__usluga2 > div,
+#usluga__3:checked ~ .popup__usluga3,
 #usluga__3:checked ~ .popup__usluga3 > div {
   opacity: 1;
-  left: 0
+  visibility: visible
 }
 #popup__brif:checked ~ .close__btn,
 #usluga__1:checked ~ .close__btn,
 #usluga__2:checked ~ .close__btn,
 #usluga__3:checked ~ .close__btn {
   opacity: 1;
-  right: 0;
-  top: 0
+  top: 0;
+  right: 0
 }
 #menu__toggle:checked ~ .menu__btn > span {
   -webkit-transform: rotate(45deg);
