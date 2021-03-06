@@ -13,7 +13,8 @@
 	scrollbar-color: var(--purp2) #181818;
   	scrollbar-width: thin;
 }
-body{
+
+body {
 	background:right top no-repeat var(--dark);
 	font-family: 'Montserrat', sans-serif;
 	font-style: normal;
@@ -25,17 +26,25 @@ body{
 	background-image: url(../img/svg/sota.svg);
 	@apply overflow-x-hidden w-full max-w-full text-white;
 }
-.wrapper{
+
+.body {
+	@apply grid pt-2;
+}
+
+.wrapper {
 	@apply container mx-auto;
 	padding: 0 calc(15px + 25 var(--adaptive));
 }
-.adaptive__font35,.column__popup > li{
+
+.adaptive__font35,.column__popup > li {
 	font-size: calc(23px + 12 var(--adaptive));
 }
-.adaptive__font30{
+
+.adaptive__font30 {
 	font-size: calc(20px + 10 var(--adaptive));
 }
-.adaptive__font28{
+
+.adaptive__font28 {
 	font-size: calc(18px + 10 var(--adaptive));
 }
 .adaptive__font25{

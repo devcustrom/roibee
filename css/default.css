@@ -58,6 +58,10 @@ body {
   color: rgba(255,255,255,var(--tw-text-opacity));
   width: 100%
 }
+.body {
+  display: grid;
+  padding-top: .5rem
+}
 .wrapper {
   width: 100%;
   margin-left: auto;
