@@ -1,10 +1,9 @@
-@import '../assets/fonts/fonts.css';
+@import './fonts.css';
+@import './default.css';
+@import './index.css';
+@import './media.css';
+@import './control.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './default.css';
-@import './index.css';
-@import './media.css';
-@import './control.css');
