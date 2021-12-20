@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "watch": "cross-env NODE_ENV=development postcss css/all.tailwind.css -o  css/all.css --watch",
-    "build": "cross-env NODE_ENV=production postcss css/full.tailwind.css -o  css/full.css",
-    "prod": "cross-env NODE_ENV=development postcss css/all.tailwind.css -o  css/all.css"
+    "watch": "npx tailwindcss -i ./src/css/style.css -o ./dist/style.css --watch",
+    "prod": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --production"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.0",
