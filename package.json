@@ -11,6 +11,7 @@
 		"autoprefixer": "^10.4.0",
 		"blazy": "^1.8.2",
 		"laravel-mix": "^6.0.39",
+		"live-server": "^1.2.1",
 		"postcss": "^8.4.5",
 		"postcss-import": "^14.0.2",
 		"swiper": "^7.3.3",
